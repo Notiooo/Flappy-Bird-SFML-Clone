@@ -1,0 +1,12 @@
+<map id="Bird_State::Game_Data" name="Bird_State::Game_Data">
+<area shape="rect" id="node1" title="Informations we want to send through states of the stack This struct is used to generate the StateSta..." alt="" coords="217,337,377,364"/>
+<area shape="rect" id="node2" title=" " alt="" coords="32,241,151,267"/>
+<area shape="rect" id="node3" href="$class_bird.html" title="The main object of the bird, which the player controls." alt="" coords="175,241,221,267"/>
+<area shape="rect" id="node4" href="$class_node_entity.html" title="The kind of scene that contains movement A specific type of scene that contains physical elements suc..." alt="" coords="155,157,241,184"/>
+<area shape="rect" id="node5" href="$class_node_scene.html" title="The class is a kind of &quot;canvas&quot; on which we can draw certain objects and combine them." alt="" coords="153,81,243,108"/>
+<area shape="rect" id="node6" title=" " alt="" coords="5,5,127,32"/>
+<area shape="rect" id="node7" title=" " alt="" coords="151,5,245,32"/>
+<area shape="rect" id="node8" title=" " alt="" coords="269,5,386,32"/>
+<area shape="rect" id="node9" href="$class_resource_manager.html" title="This class allows us to hold some textures in it, and get them back later." alt="" coords="245,233,439,275"/>
+<area shape="rect" id="node10" href="$class_signals___queue.html" title="This is a class that acts as a stack or queue of the &quot;FIFO&quot; type and allows the storage of signals." alt="" coords="464,241,575,267"/>
+</map>

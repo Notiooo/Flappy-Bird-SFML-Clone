@@ -1,0 +1,222 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Nodes">
+      <UniqueIdentifier>{f624dbc0-ddce-4ddf-8b6b-9d49e05b5a3f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Nodes\Specified Nodes">
+      <UniqueIdentifier>{eab83821-331d-4191-ac76-728ce56972d4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Resources">
+      <UniqueIdentifier>{cf57d8fd-f4cd-4824-9bd6-881caffcae52}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Signals">
+      <UniqueIdentifier>{50fdbcc3-1d94-4ff6-ae8e-1475a96f6c4e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\States">
+      <UniqueIdentifier>{40cef8dd-19e2-469e-a055-3897762fdf78}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\States\Bird States">
+      <UniqueIdentifier>{697f79b9-5813-4b06-836d-620cc2ef94bc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\States\Game States">
+      <UniqueIdentifier>{cb8efbc5-5e7a-4b88-b27b-334c2f48520a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Window.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Signals\Signal.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Signals\Signals_Queue.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="World.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Nodes\NodeScene.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Nodes\Specified Nodes\Bird.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="States\Game States\GameState.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Nodes\NodeSprite.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Nodes\NodeEntity.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Nodes\Specified Nodes\GroundNode.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="States\Bird States\FlappingState.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="States\Bird_State.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="States\Bird States\FlyingState.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="States\Bird States\GroundState.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Nodes\Specified Nodes\Pipe.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Nodes\Specified Nodes\Pipe_Spawner.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="States\Bird States\HitState.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Nodes\Specified Nodes\Score.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Nodes\Specified Nodes\Coin.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="States\Bird States\ScoreState.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="States\Game States\PauseState.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="States\Game States\TitleState.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="bird_ico.c">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="States\Application_State.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Window.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="World.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Nodes\NodeEntity.h">
+      <Filter>Header Files\Nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="Nodes\NodeScene.h">
+      <Filter>Header Files\Nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="Nodes\Specified Nodes\Pipe.h">
+      <Filter>Header Files\Nodes\Specified Nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="Nodes\Specified Nodes\Pipe_Spawner.h">
+      <Filter>Header Files\Nodes\Specified Nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="Nodes\Specified Nodes\Bird.h">
+      <Filter>Header Files\Nodes\Specified Nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="Resources\Resources.h">
+      <Filter>Header Files\Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="Resources\ResourceManager.h">
+      <Filter>Header Files\Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="Signals\Signals_Category.h">
+      <Filter>Header Files\Signals</Filter>
+    </ClInclude>
+    <ClInclude Include="Signals\Signals_Queue.h">
+      <Filter>Header Files\Signals</Filter>
+    </ClInclude>
+    <ClInclude Include="Signals\Signal.h">
+      <Filter>Header Files\Signals</Filter>
+    </ClInclude>
+    <ClInclude Include="States\States_List.h">
+      <Filter>Header Files\States</Filter>
+    </ClInclude>
+    <ClInclude Include="States\StateStack.h">
+      <Filter>Header Files\States</Filter>
+    </ClInclude>
+    <ClInclude Include="States\Game States\PauseState.h">
+      <Filter>Header Files\States\Game States</Filter>
+    </ClInclude>
+    <ClInclude Include="States\Game States\TitleState.h">
+      <Filter>Header Files\States\Game States</Filter>
+    </ClInclude>
+    <ClInclude Include="States\Game States\GameState.h">
+      <Filter>Header Files\States\Game States</Filter>
+    </ClInclude>
+    <ClInclude Include="States\Bird States\GroundState.h">
+      <Filter>Header Files\States\Bird States</Filter>
+    </ClInclude>
+    <ClInclude Include="States\Bird States\HitState.h">
+      <Filter>Header Files\States\Bird States</Filter>
+    </ClInclude>
+    <ClInclude Include="States\Bird States\FlappingState.h">
+      <Filter>Header Files\States\Bird States</Filter>
+    </ClInclude>
+    <ClInclude Include="States\Bird States\FlyingState.h">
+      <Filter>Header Files\States\Bird States</Filter>
+    </ClInclude>
+    <ClInclude Include="Nodes\NodeSprite.h">
+      <Filter>Header Files\Nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="Nodes\Specified Nodes\GroundNode.h">
+      <Filter>Header Files\Nodes\Specified Nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="States\General_State.h">
+      <Filter>Header Files\States</Filter>
+    </ClInclude>
+    <ClInclude Include="States\Bird_State.h">
+      <Filter>Header Files\States</Filter>
+    </ClInclude>
+    <ClInclude Include="Nodes\Specified Nodes\Score.h">
+      <Filter>Header Files\Nodes\Specified Nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="Nodes\Specified Nodes\Coin.h">
+      <Filter>Header Files\Nodes\Specified Nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="States\Bird States\ScoreState.h">
+      <Filter>Header Files\States\Bird States</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="States\Application_State.h">
+      <Filter>Header Files\States</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ResourceManager.inl">
+      <Filter>Header Files\Resources</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="bird.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Flappy Bird.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,9 @@
+<map id="NodeEntity" name="NodeEntity">
+<area shape="rect" id="node1" title="The kind of scene that contains movement A specific type of scene that contains physical elements suc..." alt="" coords="155,155,241,181"/>
+<area shape="rect" id="node6" href="$class_bird.html" title="The main object of the bird, which the player controls." alt="" coords="141,229,186,256"/>
+<area shape="rect" id="node7" href="$class_pipe.html" title="A pipe is an object that can move." alt="" coords="210,229,258,256"/>
+<area shape="rect" id="node2" href="$class_node_scene.html" title="The class is a kind of &quot;canvas&quot; on which we can draw certain objects and combine them." alt="" coords="153,80,243,107"/>
+<area shape="rect" id="node3" title=" " alt="" coords="5,5,127,32"/>
+<area shape="rect" id="node4" title=" " alt="" coords="151,5,245,32"/>
+<area shape="rect" id="node5" title=" " alt="" coords="269,5,386,32"/>
+</map>

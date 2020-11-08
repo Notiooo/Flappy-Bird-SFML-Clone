@@ -1,0 +1,150 @@
+\hypertarget{class_bird}{}\doxysection{Bird Class Reference}
+\label{class_bird}\index{Bird@{Bird}}
+
+
+The main object of the bird, which the player controls.  
+
+
+
+
+{\ttfamily \#include $<$Bird.\+h$>$}
+
+
+
+Inheritance diagram for Bird\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_bird__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Bird\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_bird__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_bird_ad6f2239364654663363bbe4679b473d5}{Bird}} (const \mbox{\hyperlink{class_resource_manager}{Texture\+Manager}} \&textures)
+\begin{DoxyCompactList}\small\item\em Sets the basic values of the bird, as well as reads its spritesheet and pushes individual animation frames into the deque. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_bird_a8adca3a112bab1650cfb79612d7a8764}{set\+Collision}} (unsigned int col)
+\begin{DoxyCompactList}\small\item\em It sets what kind of collision the bird has at that moment. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_bird_a99aaef5f74a0591442de498fc830b861}\label{class_bird_a99aaef5f74a0591442de498fc830b861}} 
+void \mbox{\hyperlink{class_bird_a99aaef5f74a0591442de498fc830b861}{gain\+Score}} ()
+\begin{DoxyCompactList}\small\item\em Increments the value of the result. \end{DoxyCompactList}\item 
+virtual unsigned int \mbox{\hyperlink{class_bird_ac51b3858a434594da26ae012ebd4dabe}{get\+Category}} () const
+\begin{DoxyCompactList}\small\item\em Returns a category of this specific node used for signals and colisions. \end{DoxyCompactList}\item 
+sf\+::\+Float\+Rect \mbox{\hyperlink{class_bird_ad53b74c7a2ad3e139ba97556b2f79d4b}{get\+Bounding\+Rect}} () const
+\begin{DoxyCompactList}\small\item\em Give the Rect of the object -- a certain box surrounding this object in size. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_bird_aa934c7b50f54bc41dacca339ad736555}\label{class_bird_aa934c7b50f54bc41dacca339ad736555}} 
+void \mbox{\hyperlink{class_bird_aa934c7b50f54bc41dacca339ad736555}{start\+Animate}} ()
+\begin{DoxyCompactList}\small\item\em Starts the animation. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_bird_a1bfce515c41c2e5c82698642ff656231}\label{class_bird_a1bfce515c41c2e5c82698642ff656231}} 
+void \mbox{\hyperlink{class_bird_a1bfce515c41c2e5c82698642ff656231}{stop\+Animate}} ()
+\begin{DoxyCompactList}\small\item\em Stops the animation. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_bird_a44ce6237c39ca94ef10fb73ff757682c}\label{class_bird_a44ce6237c39ca94ef10fb73ff757682c}} 
+class {\bfseries Flapping\+State}
+\item 
+\mbox{\Hypertarget{class_bird_a80fcccd2e68b7e3c29559955a4f676a7}\label{class_bird_a80fcccd2e68b7e3c29559955a4f676a7}} 
+class {\bfseries Flying\+State}
+\item 
+\mbox{\Hypertarget{class_bird_a22aa04580d069729d3af10aa8742e855}\label{class_bird_a22aa04580d069729d3af10aa8742e855}} 
+class {\bfseries Ground\+State}
+\item 
+\mbox{\Hypertarget{class_bird_a19c148a58620fb77c58fb572879f3ae1}\label{class_bird_a19c148a58620fb77c58fb572879f3ae1}} 
+class {\bfseries Hit\+State}
+\item 
+\mbox{\Hypertarget{class_bird_a0980faf3c02aab7ab5fc2b96485161e0}\label{class_bird_a0980faf3c02aab7ab5fc2b96485161e0}} 
+class {\bfseries Score\+State}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+The main object of the bird, which the player controls. 
+
+There are many things about control and the player himself, as well as things about the bird itself. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_bird_ad6f2239364654663363bbe4679b473d5}\label{class_bird_ad6f2239364654663363bbe4679b473d5}} 
+\index{Bird@{Bird}!Bird@{Bird}}
+\index{Bird@{Bird}!Bird@{Bird}}
+\doxysubsubsection{\texorpdfstring{Bird()}{Bird()}}
+{\footnotesize\ttfamily Bird\+::\+Bird (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_resource_manager}{Texture\+Manager}} \&}]{textures }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Sets the basic values of the bird, as well as reads its spritesheet and pushes individual animation frames into the deque. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em textures} & The Texture Manager that holds all the textures \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_bird_ad53b74c7a2ad3e139ba97556b2f79d4b}\label{class_bird_ad53b74c7a2ad3e139ba97556b2f79d4b}} 
+\index{Bird@{Bird}!getBoundingRect@{getBoundingRect}}
+\index{getBoundingRect@{getBoundingRect}!Bird@{Bird}}
+\doxysubsubsection{\texorpdfstring{getBoundingRect()}{getBoundingRect()}}
+{\footnotesize\ttfamily sf\+::\+Float\+Rect Bird\+::get\+Bounding\+Rect (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Give the Rect of the object -- a certain box surrounding this object in size. 
+
+\begin{DoxyReturn}{Returns}
+The Rect of this object 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_node_scene_aa511677543749633db4be90ef88b937e}{Node\+Scene}}.
+
+\mbox{\Hypertarget{class_bird_ac51b3858a434594da26ae012ebd4dabe}\label{class_bird_ac51b3858a434594da26ae012ebd4dabe}} 
+\index{Bird@{Bird}!getCategory@{getCategory}}
+\index{getCategory@{getCategory}!Bird@{Bird}}
+\doxysubsubsection{\texorpdfstring{getCategory()}{getCategory()}}
+{\footnotesize\ttfamily virtual unsigned int Bird\+::get\+Category (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Returns a category of this specific node used for signals and colisions. 
+
+\begin{DoxyReturn}{Returns}
+Category of this object 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_node_scene}{Node\+Scene}}.
+
+\mbox{\Hypertarget{class_bird_a8adca3a112bab1650cfb79612d7a8764}\label{class_bird_a8adca3a112bab1650cfb79612d7a8764}} 
+\index{Bird@{Bird}!setCollision@{setCollision}}
+\index{setCollision@{setCollision}!Bird@{Bird}}
+\doxysubsubsection{\texorpdfstring{setCollision()}{setCollision()}}
+{\footnotesize\ttfamily void Bird\+::set\+Collision (\begin{DoxyParamCaption}\item[{unsigned int}]{col }\end{DoxyParamCaption})}
+
+
+
+It sets what kind of collision the bird has at that moment. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em col} & Information about collision \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Flappy Bird/\+Nodes/\+Specified Nodes/Bird.\+h\end{DoxyCompactItemize}

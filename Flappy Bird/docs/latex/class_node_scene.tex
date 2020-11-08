@@ -1,0 +1,241 @@
+\hypertarget{class_node_scene}{}\doxysection{Node\+Scene Class Reference}
+\label{class_node_scene}\index{NodeScene@{NodeScene}}
+
+
+The class is a kind of \char`\"{}canvas\char`\"{} on which we can draw certain objects and combine them.  
+
+
+
+
+{\ttfamily \#include $<$Node\+Scene.\+h$>$}
+
+
+
+Inheritance diagram for Node\+Scene\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_node_scene__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Node\+Scene\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_node_scene__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_node_scene_a8141fae3b40f7e5438a75a80bea36b3c}\label{class_node_scene_a8141fae3b40f7e5438a75a80bea36b3c}} 
+typedef std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{class_node_scene}{Node\+Scene}} $>$ \mbox{\hyperlink{class_node_scene_a8141fae3b40f7e5438a75a80bea36b3c}{Node}}
+\begin{DoxyCompactList}\small\item\em Easier naming on Pointer for this type. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_node_scene_ab1fe57a7546cd99dbbe9cc4bb5af2a20}\label{class_node_scene_ab1fe57a7546cd99dbbe9cc4bb5af2a20}} 
+\mbox{\hyperlink{class_node_scene_ab1fe57a7546cd99dbbe9cc4bb5af2a20}{Node\+Scene}} ()
+\begin{DoxyCompactList}\small\item\em Initializes the scene with default values. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_node_scene_a3516ec5e53d8263b07508d5bb3ad0643}\label{class_node_scene_a3516ec5e53d8263b07508d5bb3ad0643}} 
+\mbox{\hyperlink{class_node_scene_a3516ec5e53d8263b07508d5bb3ad0643}{Node\+Scene}} (const \mbox{\hyperlink{class_node_scene}{Node\+Scene}} \&)=delete
+\begin{DoxyCompactList}\small\item\em I don\textquotesingle{}t want copy-\/assignment in that type. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_node_scene_a57c99545f76f9cd72feec92d79612841}{Node\+Scene}} (\mbox{\hyperlink{class_node_scene}{Node\+Scene}} \&\&node) noexcept
+\begin{DoxyCompactList}\small\item\em Move constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_node_scene}{Node\+Scene}} \& \mbox{\hyperlink{class_node_scene_ab7883ebab04a32584761d7576237fe14}{operator=}} (\mbox{\hyperlink{class_node_scene}{Node\+Scene}} \&\&node) noexcept
+\begin{DoxyCompactList}\small\item\em Move assignment operator. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_node_scene_ad905a616f4620aa6b0feb8b0d64024f4}{pin\+\_\+\+Node}} (\mbox{\hyperlink{class_node_scene_a8141fae3b40f7e5438a75a80bea36b3c}{Node}} node)
+\begin{DoxyCompactList}\small\item\em It \char`\"{}pins\char`\"{} to itself another node, in other words it attaches it as its child. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_node_scene_a8141fae3b40f7e5438a75a80bea36b3c}{Node}} \mbox{\hyperlink{class_node_scene_acf616725cfa1e4157d8e3f2417538bf5}{unpin\+\_\+\+Node}} (const \mbox{\hyperlink{class_node_scene}{Node\+Scene}} \&node)
+\begin{DoxyCompactList}\small\item\em It \char`\"{}unpins\char`\"{} from itself another node, in other words it deattaches its child. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_node_scene_ad2cc621d7c3be0f00d854eed78438086}\label{class_node_scene_ad2cc621d7c3be0f00d854eed78438086}} 
+void \mbox{\hyperlink{class_node_scene_ad2cc621d7c3be0f00d854eed78438086}{remove\+Pinned\+Nodes}} ()
+\begin{DoxyCompactList}\small\item\em Remove all pinned nodes to this node. \end{DoxyCompactList}\item 
+sf\+::\+Transform \mbox{\hyperlink{class_node_scene_aa79dc3888220489216dae286fbe9fdb3}{Get\+Absolute\+Transform}} () const
+\begin{DoxyCompactList}\small\item\em It gets absolute transform relative to the window -- not relative to the scene to which it is attached. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_node_scene_a3114613d656dc37ec4a7eeffe5c92ac0}{update}} (sf\+::\+Time dt)
+\begin{DoxyCompactList}\small\item\em Updates the status of this node scene (informations in it) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_node_scene_a713ef409bd40a83b4107f70b4a308c80}{interpret\+Signal}} (const \mbox{\hyperlink{struct_signal}{Signal}} \&signal, sf\+::\+Time dt)
+\begin{DoxyCompactList}\small\item\em Checks if the signal is for his category, and if so then it interprets it. \end{DoxyCompactList}\item 
+virtual sf\+::\+Float\+Rect \mbox{\hyperlink{class_node_scene_aa511677543749633db4be90ef88b937e}{get\+Bounding\+Rect}} () const
+\begin{DoxyCompactList}\small\item\em Give the Rect of the object -- a certain box surrounding this object in size. \end{DoxyCompactList}\item 
+unsigned int \mbox{\hyperlink{class_node_scene_a76124d905e5320b2928f924e7b6799b2}{check\+Node\+Collision}} (\mbox{\hyperlink{class_bird}{Bird}} \&bird)
+\begin{DoxyCompactList}\small\item\em Check collision only with the bird (thats how flappy bird works) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The class is a kind of \char`\"{}canvas\char`\"{} on which we can draw certain objects and combine them. 
+
+\mbox{\hyperlink{class_node_scene}{Node\+Scene}} works like a bit more complex canvas and is called a scene for a reason. First of all, you can draw and manage certain objects on the scenes. You can clip other scenes to the scene. Scenes resemble a kind of tree, which can perform operations on scenes that are pinned to them. Also, scenes pinned to another subordinate scene move in relation to the subordinate scene.
+
+Scenes can transmit a signal downwards, so that the signal will be interpreted by each of them. It is enough that only one main scene is updated, or drawn, and all the scenes pinned to it will also be. \begin{DoxyVerb}               +--------+
+               | Root   |
+               | Scene  |
+               ++------++
+                |      |
+                v      v
+         +------+-+  +-+------+
+         | Pinned |  | Pinned |
+         | Scene  |  | Scene  |
+   +-----++-------+  +-------++-----+
+   |      |                  |      |
+   v      v                  v      v
+\end{DoxyVerb}
+ +-\/-\/-\/---+-\/+ +-\/+-\/-\/-\/---+ +-\/-\/-\/---+-\/+ +-\/+-\/-\/-\/---+ $\vert$ Pinned $\vert$ $\vert$ Pinned $\vert$ $\vert$ Pinned $\vert$ $\vert$ Pinned $\vert$ $\vert$ Scene $\vert$ $\vert$ Scene $\vert$ $\vert$ Scene $\vert$ $\vert$ Scene $\vert$ +-\/-\/-\/-\/-\/---+ +-\/-\/-\/-\/-\/---+ +-\/-\/-\/-\/-\/---+ +-\/-\/-\/-\/-\/---+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_node_scene_a57c99545f76f9cd72feec92d79612841}\label{class_node_scene_a57c99545f76f9cd72feec92d79612841}} 
+\index{NodeScene@{NodeScene}!NodeScene@{NodeScene}}
+\index{NodeScene@{NodeScene}!NodeScene@{NodeScene}}
+\doxysubsubsection{\texorpdfstring{NodeScene()}{NodeScene()}}
+{\footnotesize\ttfamily Node\+Scene\+::\+Node\+Scene (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_node_scene}{Node\+Scene}} \&\&}]{node }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Move constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em node} & Node we should steal values from \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_node_scene_a76124d905e5320b2928f924e7b6799b2}\label{class_node_scene_a76124d905e5320b2928f924e7b6799b2}} 
+\index{NodeScene@{NodeScene}!checkNodeCollision@{checkNodeCollision}}
+\index{checkNodeCollision@{checkNodeCollision}!NodeScene@{NodeScene}}
+\doxysubsubsection{\texorpdfstring{checkNodeCollision()}{checkNodeCollision()}}
+{\footnotesize\ttfamily unsigned int Node\+Scene\+::check\+Node\+Collision (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_bird}{Bird}} \&}]{bird }\end{DoxyParamCaption})}
+
+
+
+Check collision only with the bird (thats how flappy bird works) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em bird} & Reference the object of the bird, which the player controls. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Information on types of collisions 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_node_scene_aa79dc3888220489216dae286fbe9fdb3}\label{class_node_scene_aa79dc3888220489216dae286fbe9fdb3}} 
+\index{NodeScene@{NodeScene}!GetAbsoluteTransform@{GetAbsoluteTransform}}
+\index{GetAbsoluteTransform@{GetAbsoluteTransform}!NodeScene@{NodeScene}}
+\doxysubsubsection{\texorpdfstring{GetAbsoluteTransform()}{GetAbsoluteTransform()}}
+{\footnotesize\ttfamily sf\+::\+Transform Node\+Scene\+::\+Get\+Absolute\+Transform (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+It gets absolute transform relative to the window -- not relative to the scene to which it is attached. 
+
+\begin{DoxyReturn}{Returns}
+The global transform of this object 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_node_scene_aa511677543749633db4be90ef88b937e}\label{class_node_scene_aa511677543749633db4be90ef88b937e}} 
+\index{NodeScene@{NodeScene}!getBoundingRect@{getBoundingRect}}
+\index{getBoundingRect@{getBoundingRect}!NodeScene@{NodeScene}}
+\doxysubsubsection{\texorpdfstring{getBoundingRect()}{getBoundingRect()}}
+{\footnotesize\ttfamily virtual sf\+::\+Float\+Rect Node\+Scene\+::get\+Bounding\+Rect (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Give the Rect of the object -- a certain box surrounding this object in size. 
+
+\begin{DoxyReturn}{Returns}
+The Rect of this object 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_bird_ad53b74c7a2ad3e139ba97556b2f79d4b}{Bird}}, \mbox{\hyperlink{class_pipe_a07a1d660cf3ba7a39380225de0d75203}{Pipe}}, \mbox{\hyperlink{class_node_sprite_aaf585ff1ea4b39f804311f2f8670e729}{Node\+Sprite}}, and \mbox{\hyperlink{class_coin_a1588a284c072485a9ade15019bb5edf4}{Coin}}.
+
+\mbox{\Hypertarget{class_node_scene_a713ef409bd40a83b4107f70b4a308c80}\label{class_node_scene_a713ef409bd40a83b4107f70b4a308c80}} 
+\index{NodeScene@{NodeScene}!interpretSignal@{interpretSignal}}
+\index{interpretSignal@{interpretSignal}!NodeScene@{NodeScene}}
+\doxysubsubsection{\texorpdfstring{interpretSignal()}{interpretSignal()}}
+{\footnotesize\ttfamily void Node\+Scene\+::interpret\+Signal (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_signal}{Signal}} \&}]{signal,  }\item[{sf\+::\+Time}]{dt }\end{DoxyParamCaption})}
+
+
+
+Checks if the signal is for his category, and if so then it interprets it. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em signal} & \mbox{\hyperlink{struct_signal}{Signal}} to be interpreted \\
+\hline
+{\em dt} & The time elapsed between the previous and the new frame. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_node_scene_ab7883ebab04a32584761d7576237fe14}\label{class_node_scene_ab7883ebab04a32584761d7576237fe14}} 
+\index{NodeScene@{NodeScene}!operator=@{operator=}}
+\index{operator=@{operator=}!NodeScene@{NodeScene}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_node_scene}{Node\+Scene}}\& Node\+Scene\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_node_scene}{Node\+Scene}} \&\&}]{node }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Move assignment operator. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em node} & Node we should steal values from \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_node_scene_ad905a616f4620aa6b0feb8b0d64024f4}\label{class_node_scene_ad905a616f4620aa6b0feb8b0d64024f4}} 
+\index{NodeScene@{NodeScene}!pin\_Node@{pin\_Node}}
+\index{pin\_Node@{pin\_Node}!NodeScene@{NodeScene}}
+\doxysubsubsection{\texorpdfstring{pin\_Node()}{pin\_Node()}}
+{\footnotesize\ttfamily void Node\+Scene\+::pin\+\_\+\+Node (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_node_scene_a8141fae3b40f7e5438a75a80bea36b3c}{Node}}}]{node }\end{DoxyParamCaption})}
+
+
+
+It \char`\"{}pins\char`\"{} to itself another node, in other words it attaches it as its child. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em node} & The node we want to pin to this node. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_node_scene_acf616725cfa1e4157d8e3f2417538bf5}\label{class_node_scene_acf616725cfa1e4157d8e3f2417538bf5}} 
+\index{NodeScene@{NodeScene}!unpin\_Node@{unpin\_Node}}
+\index{unpin\_Node@{unpin\_Node}!NodeScene@{NodeScene}}
+\doxysubsubsection{\texorpdfstring{unpin\_Node()}{unpin\_Node()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_node_scene_a8141fae3b40f7e5438a75a80bea36b3c}{Node}} Node\+Scene\+::unpin\+\_\+\+Node (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_node_scene}{Node\+Scene}} \&}]{node }\end{DoxyParamCaption})}
+
+
+
+It \char`\"{}unpins\char`\"{} from itself another node, in other words it deattaches its child. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em node} & The node we want to unpin from this node. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The unpinned node 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_node_scene_a3114613d656dc37ec4a7eeffe5c92ac0}\label{class_node_scene_a3114613d656dc37ec4a7eeffe5c92ac0}} 
+\index{NodeScene@{NodeScene}!update@{update}}
+\index{update@{update}!NodeScene@{NodeScene}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Node\+Scene\+::update (\begin{DoxyParamCaption}\item[{sf\+::\+Time}]{dt }\end{DoxyParamCaption})}
+
+
+
+Updates the status of this node scene (informations in it) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dt} & The time elapsed between the previous and the new frame. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Flappy Bird/\+Nodes/Node\+Scene.\+h\end{DoxyCompactItemize}

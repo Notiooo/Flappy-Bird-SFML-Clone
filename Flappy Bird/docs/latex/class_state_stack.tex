@@ -1,0 +1,233 @@
+\hypertarget{class_state_stack}{}\doxysection{State\+Stack$<$ State\+Type $>$ Class Template Reference}
+\label{class_state_stack}\index{StateStack$<$ StateType $>$@{StateStack$<$ StateType $>$}}
+
+
+A simpler version of finite state machine called State Stack.  
+
+
+
+
+{\ttfamily \#include $<$State\+Stack.\+h$>$}
+
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{class_state_stack_a42ff668af20311491048e17ad0beb0b5}{Operation}} \{ {\bfseries Push}, 
+{\bfseries Pop}, 
+{\bfseries Clear}
+ \}
+\begin{DoxyCompactList}\small\item\em All operations that can be performed on our stack. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_state_stack_a615df257f34d60c911f131f9c4ed9f65}\label{class_state_stack_a615df257f34d60c911f131f9c4ed9f65}} 
+using \mbox{\hyperlink{class_state_stack_a615df257f34d60c911f131f9c4ed9f65}{State\+\_\+\+Data}} = typename State\+Type\+::\+Game\+\_\+\+Data
+\begin{DoxyCompactList}\small\item\em Easier name for the data the stack transfers to its states. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_state_stack_a3ef4ce7bb06b9fa58e37251686d05678}\label{class_state_stack_a3ef4ce7bb06b9fa58e37251686d05678}} 
+using \mbox{\hyperlink{class_state_stack_a3ef4ce7bb06b9fa58e37251686d05678}{State\+\_\+\+Pointer}} = typename State\+Type\+::\+Pointer
+\begin{DoxyCompactList}\small\item\em Easier name on the pointer for the type of state that is stacked. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_state_stack_a93cd8ee51ad992813f040d09a6082baa}{State\+Stack}} (\mbox{\hyperlink{class_state_stack_a615df257f34d60c911f131f9c4ed9f65}{State\+\_\+\+Data}} gamedata)
+\begin{DoxyCompactList}\small\item\em At the moment, it only initialize the variables. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_state_stack}{State\+Stack}}$<$ State\+Type $>$ \& \mbox{\hyperlink{class_state_stack_a026faed6589e5690350fa08a70b82cfb}{operator+=}} (States\+::\+ID state)
+\begin{DoxyCompactList}\small\item\em Alternative possibility to perform Push operation on the stack. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_state_stack_aa26385f849d446775b49b96665693773}\label{class_state_stack_aa26385f849d446775b49b96665693773}} 
+\mbox{\hyperlink{class_state_stack}{State\+Stack}}$<$ State\+Type $>$ \& \mbox{\hyperlink{class_state_stack_aa26385f849d446775b49b96665693773}{operator-\/-\/}} ()
+\begin{DoxyCompactList}\small\item\em Alternative possibility to perform Pop operation on the stack. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\void \mbox{\hyperlink{class_state_stack_aa5881f76802a2ce935b6161a197eb602}{load\+State}} (States\+::\+ID state)
+\begin{DoxyCompactList}\small\item\em Loads the given state, so it can easily use it later. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_state_stack_a874a4d96f8c190f000915cb37a134761}{push\+State}} (States\+::\+ID state)
+\begin{DoxyCompactList}\small\item\em Push the state on the stack (on top of the stack) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_state_stack_af25aedf668a711071d60b8b3fb57bcfa}\label{class_state_stack_af25aedf668a711071d60b8b3fb57bcfa}} 
+void \mbox{\hyperlink{class_state_stack_af25aedf668a711071d60b8b3fb57bcfa}{pop\+State}} ()
+\begin{DoxyCompactList}\small\item\em Pop the state from the stack (from top of the stack) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_state_stack_a9f2982ce47cefb97323e144aea69c12b}\label{class_state_stack_a9f2982ce47cefb97323e144aea69c12b}} 
+void \mbox{\hyperlink{class_state_stack_a9f2982ce47cefb97323e144aea69c12b}{clear\+Stack}} ()
+\begin{DoxyCompactList}\small\item\em Removes all states from the stack. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_state_stack_ac4b442392ef369828931b1501b019021}{is\+Empty}} () const
+\begin{DoxyCompactList}\small\item\em Checks if there is any state on the stack. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_state_stack_a6df8262481bcde902dd2e9d407f68bf7}{get\+Logs}} ()
+\begin{DoxyCompactList}\small\item\em Returns collected logs, and cleans them. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_state_stack_a1bb5935678522537581c2fc64c58aaed}{update}} (sf\+::\+Time dt)
+\begin{DoxyCompactList}\small\item\em Updates the status of all states inside the state stack. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_state_stack_a466347c653bcc3488b5581b9e0aa49ec}\label{class_state_stack_a466347c653bcc3488b5581b9e0aa49ec}} 
+void \mbox{\hyperlink{class_state_stack_a466347c653bcc3488b5581b9e0aa49ec}{draw}} ()
+\begin{DoxyCompactList}\small\item\em Draw all states inside the stack (calls their \mbox{\hyperlink{class_state_stack_a466347c653bcc3488b5581b9e0aa49ec}{draw()}} method) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_state_stack_a0c8b59ee2263a1b6f69a62905bd6d5cb}{handle\+Event}} (const sf\+::\+Event \&event)
+\begin{DoxyCompactList}\small\item\em Handles all events inside the stack. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename State\+Type$>$\newline
+class State\+Stack$<$ State\+Type $>$}
+
+A simpler version of finite state machine called State Stack. 
+
+Made according to practices in \char`\"{}\+S\+F\+M\+L Game Development Book\char`\"{}
+
+\mbox{\hyperlink{class_state_stack}{State\+Stack}} that stores states of the game.
+
+In its overall operation, it allows it to act similarly to the behaviour of a stack. Certain states of the game can be overlapped or removed from the stack.
+
+For example\+: 1) We can have \mbox{\hyperlink{class_title_state}{Title\+State}} which displays logo of the company. 2) Then \mbox{\hyperlink{class_title_state}{Title\+State}} is removed from the stack, and \mbox{\hyperlink{class_game_state}{Game\+State}} is Pushed 3) While the game works, and player is playing we can push \mbox{\hyperlink{class_pause_state}{Pause\+State}} on the stack. Now \mbox{\hyperlink{class_pause_state}{Pause\+State}} code execute first, and it can (but do not have to) block layers of stack underneath. This way we can easily make \mbox{\hyperlink{class_pause_state}{Pause\+State}} draw transparent darkish rectangle on the screen, while \mbox{\hyperlink{class_game_state}{Game\+State}} underneath is still working, or not if we want to block it inside \mbox{\hyperlink{class_pause_state}{Pause\+State}}.
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em State\+Type} & type of State we want to put on stack later on. They might define different Data, or parameters that will be passed to the stack. \\
+\hline
+\end{DoxyTemplParams}
+
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{class_state_stack_a42ff668af20311491048e17ad0beb0b5}\label{class_state_stack_a42ff668af20311491048e17ad0beb0b5}} 
+\index{StateStack$<$ StateType $>$@{StateStack$<$ StateType $>$}!Operation@{Operation}}
+\index{Operation@{Operation}!StateStack$<$ StateType $>$@{StateStack$<$ StateType $>$}}
+\doxysubsubsection{\texorpdfstring{Operation}{Operation}}
+{\footnotesize\ttfamily template$<$typename State\+Type $>$ \\
+enum \mbox{\hyperlink{class_state_stack_a42ff668af20311491048e17ad0beb0b5}{State\+Stack\+::\+Operation}}}
+
+
+
+All operations that can be performed on our stack. 
+
+Specifically, these are their identifiers, which easily allow you to send information to the stack about what operation should be performed. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_state_stack_a93cd8ee51ad992813f040d09a6082baa}\label{class_state_stack_a93cd8ee51ad992813f040d09a6082baa}} 
+\index{StateStack$<$ StateType $>$@{StateStack$<$ StateType $>$}!StateStack@{StateStack}}
+\index{StateStack@{StateStack}!StateStack$<$ StateType $>$@{StateStack$<$ StateType $>$}}
+\doxysubsubsection{\texorpdfstring{StateStack()}{StateStack()}}
+{\footnotesize\ttfamily template$<$typename State\+Type $>$ \\
+\mbox{\hyperlink{class_state_stack}{State\+Stack}}$<$ State\+Type $>$\+::\mbox{\hyperlink{class_state_stack}{State\+Stack}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_state_stack_a615df257f34d60c911f131f9c4ed9f65}{State\+\_\+\+Data}}}]{gamedata }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+At the moment, it only initialize the variables. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em gamedata} & Information that is transferred to the states at the stake. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_state_stack_a6df8262481bcde902dd2e9d407f68bf7}\label{class_state_stack_a6df8262481bcde902dd2e9d407f68bf7}} 
+\index{StateStack$<$ StateType $>$@{StateStack$<$ StateType $>$}!getLogs@{getLogs}}
+\index{getLogs@{getLogs}!StateStack$<$ StateType $>$@{StateStack$<$ StateType $>$}}
+\doxysubsubsection{\texorpdfstring{getLogs()}{getLogs()}}
+{\footnotesize\ttfamily template$<$typename State\+Type $>$ \\
+std\+::string \mbox{\hyperlink{class_state_stack}{State\+Stack}}$<$ State\+Type $>$\+::get\+Logs\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns collected logs, and cleans them. 
+
+\begin{DoxyReturn}{Returns}
+Collected logs since the last \mbox{\hyperlink{class_state_stack_a6df8262481bcde902dd2e9d407f68bf7}{get\+Logs()}} function was called 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_state_stack_a0c8b59ee2263a1b6f69a62905bd6d5cb}\label{class_state_stack_a0c8b59ee2263a1b6f69a62905bd6d5cb}} 
+\index{StateStack$<$ StateType $>$@{StateStack$<$ StateType $>$}!handleEvent@{handleEvent}}
+\index{handleEvent@{handleEvent}!StateStack$<$ StateType $>$@{StateStack$<$ StateType $>$}}
+\doxysubsubsection{\texorpdfstring{handleEvent()}{handleEvent()}}
+{\footnotesize\ttfamily template$<$typename State\+Type $>$ \\
+void \mbox{\hyperlink{class_state_stack}{State\+Stack}}$<$ State\+Type $>$\+::handle\+Event (\begin{DoxyParamCaption}\item[{const sf\+::\+Event \&}]{event }\end{DoxyParamCaption})}
+
+
+
+Handles all events inside the stack. 
+
+Calls a function that handles events in any state present in the stack. 
+\begin{DoxyParams}{Parameters}
+{\em event} & Events stored in the window. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_state_stack_ac4b442392ef369828931b1501b019021}\label{class_state_stack_ac4b442392ef369828931b1501b019021}} 
+\index{StateStack$<$ StateType $>$@{StateStack$<$ StateType $>$}!isEmpty@{isEmpty}}
+\index{isEmpty@{isEmpty}!StateStack$<$ StateType $>$@{StateStack$<$ StateType $>$}}
+\doxysubsubsection{\texorpdfstring{isEmpty()}{isEmpty()}}
+{\footnotesize\ttfamily template$<$typename State\+Type $>$ \\
+bool \mbox{\hyperlink{class_state_stack}{State\+Stack}}$<$ State\+Type $>$\+::is\+Empty}
+
+
+
+Checks if there is any state on the stack. 
+
+\begin{DoxyReturn}{Returns}
+True if there is no state on the stack 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_state_stack_aa5881f76802a2ce935b6161a197eb602}\label{class_state_stack_aa5881f76802a2ce935b6161a197eb602}} 
+\index{StateStack$<$ StateType $>$@{StateStack$<$ StateType $>$}!loadState@{loadState}}
+\index{loadState@{loadState}!StateStack$<$ StateType $>$@{StateStack$<$ StateType $>$}}
+\doxysubsubsection{\texorpdfstring{loadState()}{loadState()}}
+{\footnotesize\ttfamily template$<$typename State\+Type $>$ \\
+template$<$typename T $>$ \\
+void \mbox{\hyperlink{class_state_stack}{State\+Stack}}$<$ State\+Type $>$\+::load\+State (\begin{DoxyParamCaption}\item[{States\+::\+ID}]{state }\end{DoxyParamCaption})}
+
+
+
+Loads the given state, so it can easily use it later. 
+
+Under a given identifier in the States map\+::\+ID to std\+::function$<$\+State\+\_\+\+Pointer()$>$ a callable object is created, which creates a state object for us. This object is then used by create\+State(...) to create the state and push it onto the stack. 
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & A specific state class that inherits from the class that \mbox{\hyperlink{class_state_stack}{State\+Stack}} stores. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em state} & The name of the identifier that you want to assign to the class of the loaded state. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_state_stack_a026faed6589e5690350fa08a70b82cfb}\label{class_state_stack_a026faed6589e5690350fa08a70b82cfb}} 
+\index{StateStack$<$ StateType $>$@{StateStack$<$ StateType $>$}!operator+=@{operator+=}}
+\index{operator+=@{operator+=}!StateStack$<$ StateType $>$@{StateStack$<$ StateType $>$}}
+\doxysubsubsection{\texorpdfstring{operator+=()}{operator+=()}}
+{\footnotesize\ttfamily template$<$typename State\+Type $>$ \\
+\mbox{\hyperlink{class_state_stack}{State\+Stack}}$<$ State\+Type $>$ \& \mbox{\hyperlink{class_state_stack}{State\+Stack}}$<$ State\+Type $>$\+::operator+= (\begin{DoxyParamCaption}\item[{States\+::\+ID}]{state }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Alternative possibility to perform Push operation on the stack. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em state} & The identifier of the state to push onto the stack. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_state_stack_a874a4d96f8c190f000915cb37a134761}\label{class_state_stack_a874a4d96f8c190f000915cb37a134761}} 
+\index{StateStack$<$ StateType $>$@{StateStack$<$ StateType $>$}!pushState@{pushState}}
+\index{pushState@{pushState}!StateStack$<$ StateType $>$@{StateStack$<$ StateType $>$}}
+\doxysubsubsection{\texorpdfstring{pushState()}{pushState()}}
+{\footnotesize\ttfamily template$<$typename State\+Type $>$ \\
+void \mbox{\hyperlink{class_state_stack}{State\+Stack}}$<$ State\+Type $>$\+::push\+State (\begin{DoxyParamCaption}\item[{States\+::\+ID}]{state }\end{DoxyParamCaption})}
+
+
+
+Push the state on the stack (on top of the stack) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em state} & The identifier of the state to push onto the stack. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_state_stack_a1bb5935678522537581c2fc64c58aaed}\label{class_state_stack_a1bb5935678522537581c2fc64c58aaed}} 
+\index{StateStack$<$ StateType $>$@{StateStack$<$ StateType $>$}!update@{update}}
+\index{update@{update}!StateStack$<$ StateType $>$@{StateStack$<$ StateType $>$}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily template$<$typename State\+Type $>$ \\
+void \mbox{\hyperlink{class_state_stack}{State\+Stack}}$<$ State\+Type $>$\+::update (\begin{DoxyParamCaption}\item[{sf\+::\+Time}]{dt }\end{DoxyParamCaption})}
+
+
+
+Updates the status of all states inside the state stack. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dt} & The time elapsed between the previous and the new frame. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Flappy Bird/\+States/General\+\_\+\+State.\+h\item 
+Flappy Bird/\+States/State\+Stack.\+h\end{DoxyCompactItemize}

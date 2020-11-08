@@ -1,0 +1,6 @@
+<map id="PauseState" name="PauseState">
+<area shape="rect" id="node1" title="A state that allows the player to stop the game and then resume it again or leave the game." alt="" coords="51,276,141,303"/>
+<area shape="rect" id="node2" href="$class_application___state.html" title="Application that controls flow of the game." alt="" coords="34,200,158,227"/>
+<area shape="rect" id="node3" href="$class_general___state.html" title=" " alt="" coords="5,109,187,151"/>
+<area shape="rect" id="node4" href="$class_state_stack.html" title=" " alt="" coords="15,5,177,47"/>
+</map>

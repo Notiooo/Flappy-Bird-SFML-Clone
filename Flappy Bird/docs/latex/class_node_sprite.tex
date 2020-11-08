@@ -1,0 +1,123 @@
+\hypertarget{class_node_sprite}{}\doxysection{Node\+Sprite Class Reference}
+\label{class_node_sprite}\index{NodeSprite@{NodeSprite}}
+
+
+The kind of scene that includes \char`\"{}\+Sprite\char`\"{} and the operations associated with it.  
+
+
+
+
+{\ttfamily \#include $<$Node\+Sprite.\+h$>$}
+
+
+
+Inheritance diagram for Node\+Sprite\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_node_sprite__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Node\+Sprite\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_node_sprite__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_node_sprite_a9a5811892f691e1a9121b35a19093cf8}{Node\+Sprite}} (const sf\+::\+Texture \&texture)
+\begin{DoxyCompactList}\small\item\em Initializes the texture of this object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_node_sprite_acabd914af142d7d3a6b99b5674f0257a}{Node\+Sprite}} (const sf\+::\+Texture \&texture, const sf\+::\+Int\+Rect \&rect)
+\begin{DoxyCompactList}\small\item\em Initializes the texture and rect of this object. \end{DoxyCompactList}\item 
+virtual sf\+::\+Float\+Rect \mbox{\hyperlink{class_node_sprite_ae0995aea77c3e711df75f4298f0e2a8c}{get\+Local\+Bounds}} ()
+\item 
+virtual sf\+::\+Float\+Rect \mbox{\hyperlink{class_node_sprite_aaf585ff1ea4b39f804311f2f8670e729}{get\+Bounding\+Rect}} () const
+\begin{DoxyCompactList}\small\item\em Give the Rect of the object -- a certain box surrounding this object in size. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_node_sprite_ad70e32180ceb87a4443dd52b5ae68a62}\label{class_node_sprite_ad70e32180ceb87a4443dd52b5ae68a62}} 
+sf\+::\+Sprite \mbox{\hyperlink{class_node_sprite_ad70e32180ceb87a4443dd52b5ae68a62}{sprite}}
+\begin{DoxyCompactList}\small\item\em Image of this object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+The kind of scene that includes \char`\"{}\+Sprite\char`\"{} and the operations associated with it. 
+
+This kind of scene has some kind of graphical robe that we want to draw or manage. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_node_sprite_a9a5811892f691e1a9121b35a19093cf8}\label{class_node_sprite_a9a5811892f691e1a9121b35a19093cf8}} 
+\index{NodeSprite@{NodeSprite}!NodeSprite@{NodeSprite}}
+\index{NodeSprite@{NodeSprite}!NodeSprite@{NodeSprite}}
+\doxysubsubsection{\texorpdfstring{NodeSprite()}{NodeSprite()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Node\+Sprite\+::\+Node\+Sprite (\begin{DoxyParamCaption}\item[{const sf\+::\+Texture \&}]{texture }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Initializes the texture of this object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em texture} & The Texture Manager that holds the textures \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_node_sprite_acabd914af142d7d3a6b99b5674f0257a}\label{class_node_sprite_acabd914af142d7d3a6b99b5674f0257a}} 
+\index{NodeSprite@{NodeSprite}!NodeSprite@{NodeSprite}}
+\index{NodeSprite@{NodeSprite}!NodeSprite@{NodeSprite}}
+\doxysubsubsection{\texorpdfstring{NodeSprite()}{NodeSprite()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Node\+Sprite\+::\+Node\+Sprite (\begin{DoxyParamCaption}\item[{const sf\+::\+Texture \&}]{texture,  }\item[{const sf\+::\+Int\+Rect \&}]{rect }\end{DoxyParamCaption})}
+
+
+
+Initializes the texture and rect of this object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em texture} & The Texture Manager that holds the textures \\
+\hline
+{\em rect} & The rect size of this object (size of the sprite) \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_node_sprite_aaf585ff1ea4b39f804311f2f8670e729}\label{class_node_sprite_aaf585ff1ea4b39f804311f2f8670e729}} 
+\index{NodeSprite@{NodeSprite}!getBoundingRect@{getBoundingRect}}
+\index{getBoundingRect@{getBoundingRect}!NodeSprite@{NodeSprite}}
+\doxysubsubsection{\texorpdfstring{getBoundingRect()}{getBoundingRect()}}
+{\footnotesize\ttfamily virtual sf\+::\+Float\+Rect Node\+Sprite\+::get\+Bounding\+Rect (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Give the Rect of the object -- a certain box surrounding this object in size. 
+
+\begin{DoxyReturn}{Returns}
+The Rect of this object 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_node_scene_aa511677543749633db4be90ef88b937e}{Node\+Scene}}.
+
+\mbox{\Hypertarget{class_node_sprite_ae0995aea77c3e711df75f4298f0e2a8c}\label{class_node_sprite_ae0995aea77c3e711df75f4298f0e2a8c}} 
+\index{NodeSprite@{NodeSprite}!getLocalBounds@{getLocalBounds}}
+\index{getLocalBounds@{getLocalBounds}!NodeSprite@{NodeSprite}}
+\doxysubsubsection{\texorpdfstring{getLocalBounds()}{getLocalBounds()}}
+{\footnotesize\ttfamily virtual sf\+::\+Float\+Rect Node\+Sprite\+::get\+Local\+Bounds (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\begin{DoxyReturn}{Returns}
+local boundaries around this object 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Flappy Bird/\+Nodes/Node\+Sprite.\+h\end{DoxyCompactItemize}

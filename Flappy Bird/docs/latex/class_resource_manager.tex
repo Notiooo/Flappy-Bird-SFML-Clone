@@ -1,0 +1,127 @@
+\hypertarget{class_resource_manager}{}\doxysection{Resource\+Manager$<$ Resource\+Type, Identifier $>$ Class Template Reference}
+\label{class_resource_manager}\index{ResourceManager$<$ ResourceType, Identifier $>$@{ResourceManager$<$ ResourceType, Identifier $>$}}
+
+
+This class allows us to hold some textures in it, and get them back later.  
+
+
+
+
+{\ttfamily \#include $<$Resource\+Manager.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_resource_manager_a2f6c6667a846e81fa8130220c059d3f0}{load\+\_\+resource}} (Identifier group, const std\+::string \&file)
+\begin{DoxyCompactList}\small\item\em Loads the resource from the file, and stores it under given identifier name. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Param $>$ }\\void \mbox{\hyperlink{class_resource_manager_a31cdc8bee7185035779ebddcd447e373}{load\+\_\+resource}} (Identifier group, const std\+::string \&file, const Param \&param)
+\begin{DoxyCompactList}\small\item\em Loads the resource from the file, and stores it under given identifier name. \end{DoxyCompactList}\item 
+Resource\+Type \& \mbox{\hyperlink{class_resource_manager_aab6655e9589a9f44565ab7d0e1e4c336}{get\+\_\+resource}} (Identifier id)
+\begin{DoxyCompactList}\small\item\em Gives us reference to the resource of given identifier. \end{DoxyCompactList}\item 
+const Resource\+Type \& \mbox{\hyperlink{class_resource_manager_a87ee8db7f27e059fc1507b3d28da3673}{get\+\_\+resource}} (Identifier id) const
+\begin{DoxyCompactList}\small\item\em Gives us reference to the resource of given identifier. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename Resource\+Type, typename Identifier$>$\newline
+class Resource\+Manager$<$ Resource\+Type, Identifier $>$}
+
+This class allows us to hold some textures in it, and get them back later. 
+
+I use this function due to the fact that Textures, or sounds are very heavy, and I want to store them once, and them use them multiple times. 
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Resource\+Type} & Type of the resource we want to store \\
+\hline
+{\em Identifier} & The identifiers we want to use when selecting back to our resources. \\
+\hline
+\end{DoxyTemplParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_resource_manager_aab6655e9589a9f44565ab7d0e1e4c336}\label{class_resource_manager_aab6655e9589a9f44565ab7d0e1e4c336}} 
+\index{ResourceManager$<$ ResourceType, Identifier $>$@{ResourceManager$<$ ResourceType, Identifier $>$}!get\_resource@{get\_resource}}
+\index{get\_resource@{get\_resource}!ResourceManager$<$ ResourceType, Identifier $>$@{ResourceManager$<$ ResourceType, Identifier $>$}}
+\doxysubsubsection{\texorpdfstring{get\_resource()}{get\_resource()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename Resource\+Type , typename Identifier $>$ \\
+Resource\+Type\& \mbox{\hyperlink{class_resource_manager}{Resource\+Manager}}$<$ Resource\+Type, Identifier $>$\+::get\+\_\+resource (\begin{DoxyParamCaption}\item[{Identifier}]{id }\end{DoxyParamCaption})}
+
+
+
+Gives us reference to the resource of given identifier. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & Resource identifier to be read \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Reference to the resource of given identifier 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_resource_manager_a87ee8db7f27e059fc1507b3d28da3673}\label{class_resource_manager_a87ee8db7f27e059fc1507b3d28da3673}} 
+\index{ResourceManager$<$ ResourceType, Identifier $>$@{ResourceManager$<$ ResourceType, Identifier $>$}!get\_resource@{get\_resource}}
+\index{get\_resource@{get\_resource}!ResourceManager$<$ ResourceType, Identifier $>$@{ResourceManager$<$ ResourceType, Identifier $>$}}
+\doxysubsubsection{\texorpdfstring{get\_resource()}{get\_resource()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename Resource\+Type , typename Identifier $>$ \\
+const Resource\+Type\& \mbox{\hyperlink{class_resource_manager}{Resource\+Manager}}$<$ Resource\+Type, Identifier $>$\+::get\+\_\+resource (\begin{DoxyParamCaption}\item[{Identifier}]{id }\end{DoxyParamCaption}) const}
+
+
+
+Gives us reference to the resource of given identifier. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & Resource identifier to be read \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Reference to the resource of given identifier 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_resource_manager_a2f6c6667a846e81fa8130220c059d3f0}\label{class_resource_manager_a2f6c6667a846e81fa8130220c059d3f0}} 
+\index{ResourceManager$<$ ResourceType, Identifier $>$@{ResourceManager$<$ ResourceType, Identifier $>$}!load\_resource@{load\_resource}}
+\index{load\_resource@{load\_resource}!ResourceManager$<$ ResourceType, Identifier $>$@{ResourceManager$<$ ResourceType, Identifier $>$}}
+\doxysubsubsection{\texorpdfstring{load\_resource()}{load\_resource()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename Resource\+Type , typename Identifier $>$ \\
+void \mbox{\hyperlink{class_resource_manager}{Resource\+Manager}}$<$ Resource\+Type, Identifier $>$\+::load\+\_\+resource (\begin{DoxyParamCaption}\item[{Identifier}]{group,  }\item[{const std\+::string \&}]{file }\end{DoxyParamCaption})}
+
+
+
+Loads the resource from the file, and stores it under given identifier name. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em group} & The identifier of the resource under whose name you want to save and read the object. \\
+\hline
+{\em file} & File from which we read a given resource \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_resource_manager_a31cdc8bee7185035779ebddcd447e373}\label{class_resource_manager_a31cdc8bee7185035779ebddcd447e373}} 
+\index{ResourceManager$<$ ResourceType, Identifier $>$@{ResourceManager$<$ ResourceType, Identifier $>$}!load\_resource@{load\_resource}}
+\index{load\_resource@{load\_resource}!ResourceManager$<$ ResourceType, Identifier $>$@{ResourceManager$<$ ResourceType, Identifier $>$}}
+\doxysubsubsection{\texorpdfstring{load\_resource()}{load\_resource()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename Resource\+Type , typename Identifier $>$ \\
+template$<$typename Param $>$ \\
+void \mbox{\hyperlink{class_resource_manager}{Resource\+Manager}}$<$ Resource\+Type, Identifier $>$\+::load\+\_\+resource (\begin{DoxyParamCaption}\item[{Identifier}]{group,  }\item[{const std\+::string \&}]{file,  }\item[{const Param \&}]{param }\end{DoxyParamCaption})}
+
+
+
+Loads the resource from the file, and stores it under given identifier name. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Param} & Additional type that you may want to use when storing the resource. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em group} & The identifier of the resource under whose name you want to save and read the object. \\
+\hline
+{\em file} & File from which we read a given resource \\
+\hline
+{\em param} & Additional parameter that you may want to use when storing the resource. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Flappy Bird/\+Resources/Resource\+Manager.\+h\end{DoxyCompactItemize}

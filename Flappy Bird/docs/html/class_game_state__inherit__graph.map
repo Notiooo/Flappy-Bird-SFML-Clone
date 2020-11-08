@@ -1,0 +1,5 @@
+<map id="GameState" name="GameState">
+<area shape="rect" id="node1" title="A state where the actual game starts." alt="" coords="52,169,140,196"/>
+<area shape="rect" id="node2" href="$class_application___state.html" title="Application that controls flow of the game." alt="" coords="34,95,158,121"/>
+<area shape="rect" id="node3" href="$class_general___state.html" title=" " alt="" coords="5,5,187,47"/>
+</map>

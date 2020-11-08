@@ -1,0 +1,5 @@
+<map id="FlyingState" name="FlyingState">
+<area shape="rect" id="node1" title="A state where bird is flying and waiting for user interaction." alt="" coords="31,169,119,196"/>
+<area shape="rect" id="node2" href="$class_bird___state.html" title="State of bird behaviour." alt="" coords="34,95,117,121"/>
+<area shape="rect" id="node3" href="$class_general___state.html" title=" " alt="" coords="5,5,145,47"/>
+</map>

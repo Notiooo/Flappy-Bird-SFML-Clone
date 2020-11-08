@@ -1,0 +1,62 @@
+\hypertarget{class_signals___queue}{}\doxysection{Signals\+\_\+\+Queue Class Reference}
+\label{class_signals___queue}\index{Signals\_Queue@{Signals\_Queue}}
+
+
+This is a class that acts as a stack or queue of the \char`\"{}\+F\+I\+F\+O\char`\"{} type and allows the storage of signals.  
+
+
+
+
+{\ttfamily \#include $<$Signals\+\_\+\+Queue.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_signals___queue_a952d91512763706333b8b445d9eed48f}{push}} (const \mbox{\hyperlink{struct_signal}{Signal}} \&signal)
+\begin{DoxyCompactList}\small\item\em Pushes the signal to the queue. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_signal}{Signal}} \mbox{\hyperlink{class_signals___queue_aae85d282a3b576c49955720e6b723642}{pop}} ()
+\begin{DoxyCompactList}\small\item\em Pops the signal from the queue, and returns it. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_signals___queue_a51a67180d5312f35de7adfd76282191e}\label{class_signals___queue_a51a67180d5312f35de7adfd76282191e}} 
+bool \mbox{\hyperlink{class_signals___queue_a51a67180d5312f35de7adfd76282191e}{is\+Empty}} () const
+\begin{DoxyCompactList}\small\item\em Check if the queue is empty. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This is a class that acts as a stack or queue of the \char`\"{}\+F\+I\+F\+O\char`\"{} type and allows the storage of signals. 
+
+This queue is being passed on to a huge number of game areas. It allows communication of unconnected game objects. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_signals___queue_aae85d282a3b576c49955720e6b723642}\label{class_signals___queue_aae85d282a3b576c49955720e6b723642}} 
+\index{Signals\_Queue@{Signals\_Queue}!pop@{pop}}
+\index{pop@{pop}!Signals\_Queue@{Signals\_Queue}}
+\doxysubsubsection{\texorpdfstring{pop()}{pop()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_signal}{Signal}} Signals\+\_\+\+Queue\+::pop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Pops the signal from the queue, and returns it. 
+
+\begin{DoxyReturn}{Returns}
+The signal that was popped from the queue. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_signals___queue_a952d91512763706333b8b445d9eed48f}\label{class_signals___queue_a952d91512763706333b8b445d9eed48f}} 
+\index{Signals\_Queue@{Signals\_Queue}!push@{push}}
+\index{push@{push}!Signals\_Queue@{Signals\_Queue}}
+\doxysubsubsection{\texorpdfstring{push()}{push()}}
+{\footnotesize\ttfamily void Signals\+\_\+\+Queue\+::push (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_signal}{Signal}} \&}]{signal }\end{DoxyParamCaption})}
+
+
+
+Pushes the signal to the queue. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em signal} & \mbox{\hyperlink{struct_signal}{Signal}} to be pushed to the queue \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Flappy Bird/\+Signals/Signals\+\_\+\+Queue.\+h\end{DoxyCompactItemize}

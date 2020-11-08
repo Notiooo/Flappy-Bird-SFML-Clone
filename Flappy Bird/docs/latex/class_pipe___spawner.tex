@@ -1,0 +1,112 @@
+\hypertarget{class_pipe___spawner}{}\doxysection{Pipe\+\_\+\+Spawner Class Reference}
+\label{class_pipe___spawner}\index{Pipe\_Spawner@{Pipe\_Spawner}}
+
+
+A pipe generator which, based on the given parameters, generates pipes at appropriate speed and at appropriate intervals.  
+
+
+
+
+{\ttfamily \#include $<$Pipe\+\_\+\+Spawner.\+h$>$}
+
+
+
+Inheritance diagram for Pipe\+\_\+\+Spawner\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_pipe___spawner__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Pipe\+\_\+\+Spawner\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_pipe___spawner__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_pipe___spawner_a83b4f6d3024ba380b464ab6b81853999}{Pipe\+\_\+\+Spawner}} (const \mbox{\hyperlink{class_resource_manager}{Texture\+Manager}} \&textures, sf\+::\+Vector2f spawn\+\_\+position, \mbox{\hyperlink{class_bird}{Bird}} \&the\+Player)
+\begin{DoxyCompactList}\small\item\em Initializes all variables. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_pipe___spawner_a2b696ed3c69894d0226c987efc436f2c}\label{class_pipe___spawner_a2b696ed3c69894d0226c987efc436f2c}} 
+void \mbox{\hyperlink{class_pipe___spawner_a2b696ed3c69894d0226c987efc436f2c}{start\+\_\+spawning}} ()
+\begin{DoxyCompactList}\small\item\em This function makes the generator start to generate pipes. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_pipe___spawner_a4f58f49670191ac663d3281e231a7efb}\label{class_pipe___spawner_a4f58f49670191ac663d3281e231a7efb}} 
+void \mbox{\hyperlink{class_pipe___spawner_a4f58f49670191ac663d3281e231a7efb}{stop\+\_\+spawning}} ()
+\begin{DoxyCompactList}\small\item\em This function makes the generator stop to generate pipes. \end{DoxyCompactList}\item 
+virtual unsigned int \mbox{\hyperlink{class_pipe___spawner_a5a3d37ae2f0dc4e8f5c6b8658fb5c780}{get\+Category}} () const override
+\begin{DoxyCompactList}\small\item\em Returns a category of this specific node used for signals and colisions. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_pipe___spawner_a4cb76159e42954afca95d760d5fd789e}\label{class_pipe___spawner_a4cb76159e42954afca95d760d5fd789e}} 
+int \mbox{\hyperlink{class_pipe___spawner_a4cb76159e42954afca95d760d5fd789e}{offset\+\_\+Y}} = 60
+\begin{DoxyCompactList}\small\item\em What should be the space between the pipes in the Y axis. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_pipe___spawner_aff8e608ff6d45722e166c61883cb21a7}\label{class_pipe___spawner_aff8e608ff6d45722e166c61883cb21a7}} 
+int \mbox{\hyperlink{class_pipe___spawner_aff8e608ff6d45722e166c61883cb21a7}{offset\+\_\+X}} = 25
+\begin{DoxyCompactList}\small\item\em What space should be on X axis between Pipes. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_pipe___spawner_afa536338468455cebf79bfc9342a0827}\label{class_pipe___spawner_afa536338468455cebf79bfc9342a0827}} 
+int \mbox{\hyperlink{class_pipe___spawner_afa536338468455cebf79bfc9342a0827}{distance\+\_\+between\+\_\+pipes}} = 35
+\begin{DoxyCompactList}\small\item\em Minimal distance between pipes. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_pipe___spawner_a642b6fb5e9c9c7248d635b0ae12ad1ef}\label{class_pipe___spawner_a642b6fb5e9c9c7248d635b0ae12ad1ef}} 
+float \mbox{\hyperlink{class_pipe___spawner_a642b6fb5e9c9c7248d635b0ae12ad1ef}{scrolling\+Speed}} = 30.\+2f
+\begin{DoxyCompactList}\small\item\em How fast spawned pipes move. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+A pipe generator which, based on the given parameters, generates pipes at appropriate speed and at appropriate intervals. 
+
+\mbox{\hyperlink{class_pipe}{Pipe}} Spawner should have been placed in (0,0) (left up corner of the screen) 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_pipe___spawner_a83b4f6d3024ba380b464ab6b81853999}\label{class_pipe___spawner_a83b4f6d3024ba380b464ab6b81853999}} 
+\index{Pipe\_Spawner@{Pipe\_Spawner}!Pipe\_Spawner@{Pipe\_Spawner}}
+\index{Pipe\_Spawner@{Pipe\_Spawner}!Pipe\_Spawner@{Pipe\_Spawner}}
+\doxysubsubsection{\texorpdfstring{Pipe\_Spawner()}{Pipe\_Spawner()}}
+{\footnotesize\ttfamily Pipe\+\_\+\+Spawner\+::\+Pipe\+\_\+\+Spawner (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_resource_manager}{Texture\+Manager}} \&}]{textures,  }\item[{sf\+::\+Vector2f}]{spawn\+\_\+position,  }\item[{\mbox{\hyperlink{class_bird}{Bird}} \&}]{the\+Player }\end{DoxyParamCaption})}
+
+
+
+Initializes all variables. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em textures} & The Texture Manager that hold the textures \\
+\hline
+{\em spawn\+\_\+position} & Position at which the pipes should be generated \\
+\hline
+{\em the\+Player} & Reference to the object of the bird, which the player controls. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_pipe___spawner_a5a3d37ae2f0dc4e8f5c6b8658fb5c780}\label{class_pipe___spawner_a5a3d37ae2f0dc4e8f5c6b8658fb5c780}} 
+\index{Pipe\_Spawner@{Pipe\_Spawner}!getCategory@{getCategory}}
+\index{getCategory@{getCategory}!Pipe\_Spawner@{Pipe\_Spawner}}
+\doxysubsubsection{\texorpdfstring{getCategory()}{getCategory()}}
+{\footnotesize\ttfamily virtual unsigned int Pipe\+\_\+\+Spawner\+::get\+Category (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Returns a category of this specific node used for signals and colisions. 
+
+\begin{DoxyReturn}{Returns}
+Category of this object 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_node_scene}{Node\+Scene}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Flappy Bird/\+Nodes/\+Specified Nodes/Pipe\+\_\+\+Spawner.\+h\end{DoxyCompactItemize}

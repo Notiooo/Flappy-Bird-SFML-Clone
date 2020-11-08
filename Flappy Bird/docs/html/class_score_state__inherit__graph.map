@@ -1,0 +1,5 @@
+<map id="ScoreState" name="ScoreState">
+<area shape="rect" id="node1" title="In this state, the score that the player has achieved is displayed." alt="" coords="32,169,119,196"/>
+<area shape="rect" id="node2" href="$class_bird___state.html" title="State of bird behaviour." alt="" coords="34,95,117,121"/>
+<area shape="rect" id="node3" href="$class_general___state.html" title=" " alt="" coords="5,5,145,47"/>
+</map>

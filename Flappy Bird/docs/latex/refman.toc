@@ -1,0 +1,214 @@
+\@ifundefined {etoctocstyle}{\let \etoc@startlocaltoc \@gobble \let \etoc@settocdepth \@gobble \let \etoc@depthtag \@gobble \let \etoc@setlocaltop \@gobble }{}
+\contentsline {chapter}{\numberline {1}Namespace Documentation}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Resources Namespace Reference}{1}{section.1.1}%
+\contentsline {subsection}{\numberline {1.1.1}Detailed Description}{1}{subsection.1.1.1}%
+\contentsline {subsection}{\numberline {1.1.2}Enumeration Type Documentation}{1}{subsection.1.1.2}%
+\contentsline {subsubsection}{\numberline {1.1.2.1}Fonts}{1}{subsubsection.1.1.2.1}%
+\contentsline {subsubsection}{\numberline {1.1.2.2}Textures}{2}{subsubsection.1.1.2.2}%
+\contentsline {chapter}{\numberline {2}Class Documentation}{3}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Application\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}State Class Reference}{3}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}Detailed Description}{5}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.2}Member Typedef Documentation}{5}{subsection.2.1.2}%
+\contentsline {subsubsection}{\numberline {2.1.2.1}Pointer}{5}{subsubsection.2.1.2.1}%
+\contentsline {subsection}{\numberline {2.1.3}Constructor \& Destructor Documentation}{5}{subsection.2.1.3}%
+\contentsline {subsubsection}{\numberline {2.1.3.1}Application\_State()}{5}{subsubsection.2.1.3.1}%
+\contentsline {subsection}{\numberline {2.1.4}Member Function Documentation}{5}{subsection.2.1.4}%
+\contentsline {subsubsection}{\numberline {2.1.4.1}getGameData()}{6}{subsubsection.2.1.4.1}%
+\contentsline {subsubsection}{\numberline {2.1.4.2}handleEvent()}{6}{subsubsection.2.1.4.2}%
+\contentsline {subsubsection}{\numberline {2.1.4.3}update()}{6}{subsubsection.2.1.4.3}%
+\contentsline {section}{\numberline {2.2}Bird Class Reference}{7}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Detailed Description}{8}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Constructor \& Destructor Documentation}{8}{subsection.2.2.2}%
+\contentsline {subsubsection}{\numberline {2.2.2.1}Bird()}{8}{subsubsection.2.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.3}Member Function Documentation}{9}{subsection.2.2.3}%
+\contentsline {subsubsection}{\numberline {2.2.3.1}getBoundingRect()}{9}{subsubsection.2.2.3.1}%
+\contentsline {subsubsection}{\numberline {2.2.3.2}getCategory()}{9}{subsubsection.2.2.3.2}%
+\contentsline {subsubsection}{\numberline {2.2.3.3}setCollision()}{9}{subsubsection.2.2.3.3}%
+\contentsline {section}{\numberline {2.3}Bird\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}State Class Reference}{10}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Detailed Description}{11}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}Member Typedef Documentation}{12}{subsection.2.3.2}%
+\contentsline {subsubsection}{\numberline {2.3.2.1}Pointer}{12}{subsubsection.2.3.2.1}%
+\contentsline {subsection}{\numberline {2.3.3}Constructor \& Destructor Documentation}{12}{subsection.2.3.3}%
+\contentsline {subsubsection}{\numberline {2.3.3.1}Bird\_State()}{12}{subsubsection.2.3.3.1}%
+\contentsline {subsection}{\numberline {2.3.4}Member Function Documentation}{12}{subsection.2.3.4}%
+\contentsline {subsubsection}{\numberline {2.3.4.1}getGameData()}{12}{subsubsection.2.3.4.1}%
+\contentsline {subsubsection}{\numberline {2.3.4.2}handleEvent()}{12}{subsubsection.2.3.4.2}%
+\contentsline {subsubsection}{\numberline {2.3.4.3}update()}{13}{subsubsection.2.3.4.3}%
+\contentsline {section}{\numberline {2.4}Coin Class Reference}{13}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}Detailed Description}{14}{subsection.2.4.1}%
+\contentsline {subsection}{\numberline {2.4.2}Constructor \& Destructor Documentation}{15}{subsection.2.4.2}%
+\contentsline {subsubsection}{\numberline {2.4.2.1}Coin()}{15}{subsubsection.2.4.2.1}%
+\contentsline {subsection}{\numberline {2.4.3}Member Function Documentation}{15}{subsection.2.4.3}%
+\contentsline {subsubsection}{\numberline {2.4.3.1}getBoundingRect()}{15}{subsubsection.2.4.3.1}%
+\contentsline {subsubsection}{\numberline {2.4.3.2}setPosition()}{15}{subsubsection.2.4.3.2}%
+\contentsline {section}{\numberline {2.5}Flapping\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}State Class Reference}{16}{section.2.5}%
+\contentsline {subsection}{\numberline {2.5.1}Detailed Description}{17}{subsection.2.5.1}%
+\contentsline {subsection}{\numberline {2.5.2}Constructor \& Destructor Documentation}{17}{subsection.2.5.2}%
+\contentsline {subsubsection}{\numberline {2.5.2.1}FlappingState()}{17}{subsubsection.2.5.2.1}%
+\contentsline {subsection}{\numberline {2.5.3}Member Function Documentation}{17}{subsection.2.5.3}%
+\contentsline {subsubsection}{\numberline {2.5.3.1}handleEvent()}{17}{subsubsection.2.5.3.1}%
+\contentsline {subsubsection}{\numberline {2.5.3.2}update()}{18}{subsubsection.2.5.3.2}%
+\contentsline {section}{\numberline {2.6}Flying\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}State Class Reference}{18}{section.2.6}%
+\contentsline {subsection}{\numberline {2.6.1}Detailed Description}{19}{subsection.2.6.1}%
+\contentsline {subsection}{\numberline {2.6.2}Constructor \& Destructor Documentation}{19}{subsection.2.6.2}%
+\contentsline {subsubsection}{\numberline {2.6.2.1}FlyingState()}{19}{subsubsection.2.6.2.1}%
+\contentsline {subsection}{\numberline {2.6.3}Member Function Documentation}{20}{subsection.2.6.3}%
+\contentsline {subsubsection}{\numberline {2.6.3.1}handleEvent()}{20}{subsubsection.2.6.3.1}%
+\contentsline {subsubsection}{\numberline {2.6.3.2}update()}{20}{subsubsection.2.6.3.2}%
+\contentsline {section}{\numberline {2.7}Bird\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}State\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Game\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Data Struct Reference}{21}{section.2.7}%
+\contentsline {subsection}{\numberline {2.7.1}Detailed Description}{21}{subsection.2.7.1}%
+\contentsline {section}{\numberline {2.8}Application\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}State\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Game\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Data Struct Reference}{22}{section.2.8}%
+\contentsline {subsection}{\numberline {2.8.1}Detailed Description}{22}{subsection.2.8.1}%
+\contentsline {section}{\numberline {2.9}Game\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}State Class Reference}{23}{section.2.9}%
+\contentsline {subsection}{\numberline {2.9.1}Detailed Description}{24}{subsection.2.9.1}%
+\contentsline {subsection}{\numberline {2.9.2}Constructor \& Destructor Documentation}{24}{subsection.2.9.2}%
+\contentsline {subsubsection}{\numberline {2.9.2.1}GameState()}{24}{subsubsection.2.9.2.1}%
+\contentsline {subsection}{\numberline {2.9.3}Member Function Documentation}{24}{subsection.2.9.3}%
+\contentsline {subsubsection}{\numberline {2.9.3.1}handleEvent()}{25}{subsubsection.2.9.3.1}%
+\contentsline {subsubsection}{\numberline {2.9.3.2}loadFonts()}{25}{subsubsection.2.9.3.2}%
+\contentsline {subsubsection}{\numberline {2.9.3.3}update()}{25}{subsubsection.2.9.3.3}%
+\contentsline {section}{\numberline {2.10}General\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}State$<$ State\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Type $>$ Class Template Reference}{26}{section.2.10}%
+\contentsline {subsection}{\numberline {2.10.1}Detailed Description}{27}{subsection.2.10.1}%
+\contentsline {subsection}{\numberline {2.10.2}Constructor \& Destructor Documentation}{27}{subsection.2.10.2}%
+\contentsline {subsubsection}{\numberline {2.10.2.1}General\_State()}{27}{subsubsection.2.10.2.1}%
+\contentsline {subsection}{\numberline {2.10.3}Member Function Documentation}{27}{subsection.2.10.3}%
+\contentsline {subsubsection}{\numberline {2.10.3.1}handleEvent()}{27}{subsubsection.2.10.3.1}%
+\contentsline {subsubsection}{\numberline {2.10.3.2}requestStackClear()}{29}{subsubsection.2.10.3.2}%
+\contentsline {subsubsection}{\numberline {2.10.3.3}requestStackPop()}{29}{subsubsection.2.10.3.3}%
+\contentsline {subsubsection}{\numberline {2.10.3.4}requestStackPush()}{29}{subsubsection.2.10.3.4}%
+\contentsline {subsubsection}{\numberline {2.10.3.5}update()}{30}{subsubsection.2.10.3.5}%
+\contentsline {section}{\numberline {2.11}Ground\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Node Class Reference}{30}{section.2.11}%
+\contentsline {subsection}{\numberline {2.11.1}Detailed Description}{31}{subsection.2.11.1}%
+\contentsline {subsection}{\numberline {2.11.2}Constructor \& Destructor Documentation}{31}{subsection.2.11.2}%
+\contentsline {subsubsection}{\numberline {2.11.2.1}GroundNode()}{31}{subsubsection.2.11.2.1}%
+\contentsline {section}{\numberline {2.12}Ground\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}State Class Reference}{32}{section.2.12}%
+\contentsline {subsection}{\numberline {2.12.1}Detailed Description}{33}{subsection.2.12.1}%
+\contentsline {subsection}{\numberline {2.12.2}Constructor \& Destructor Documentation}{33}{subsection.2.12.2}%
+\contentsline {subsubsection}{\numberline {2.12.2.1}GroundState()}{33}{subsubsection.2.12.2.1}%
+\contentsline {subsection}{\numberline {2.12.3}Member Function Documentation}{33}{subsection.2.12.3}%
+\contentsline {subsubsection}{\numberline {2.12.3.1}handleEvent()}{33}{subsubsection.2.12.3.1}%
+\contentsline {subsubsection}{\numberline {2.12.3.2}update()}{34}{subsubsection.2.12.3.2}%
+\contentsline {section}{\numberline {2.13}Hit\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}State Class Reference}{34}{section.2.13}%
+\contentsline {subsection}{\numberline {2.13.1}Detailed Description}{35}{subsection.2.13.1}%
+\contentsline {subsection}{\numberline {2.13.2}Constructor \& Destructor Documentation}{36}{subsection.2.13.2}%
+\contentsline {subsubsection}{\numberline {2.13.2.1}HitState()}{36}{subsubsection.2.13.2.1}%
+\contentsline {subsection}{\numberline {2.13.3}Member Function Documentation}{36}{subsection.2.13.3}%
+\contentsline {subsubsection}{\numberline {2.13.3.1}handleEvent()}{36}{subsubsection.2.13.3.1}%
+\contentsline {subsubsection}{\numberline {2.13.3.2}update()}{36}{subsubsection.2.13.3.2}%
+\contentsline {section}{\numberline {2.14}Node\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Entity Class Reference}{37}{section.2.14}%
+\contentsline {subsection}{\numberline {2.14.1}Detailed Description}{38}{subsection.2.14.1}%
+\contentsline {subsection}{\numberline {2.14.2}Member Function Documentation}{38}{subsection.2.14.2}%
+\contentsline {subsubsection}{\numberline {2.14.2.1}accelerate()}{38}{subsubsection.2.14.2.1}%
+\contentsline {subsubsection}{\numberline {2.14.2.2}getVelocity()}{39}{subsubsection.2.14.2.2}%
+\contentsline {subsubsection}{\numberline {2.14.2.3}operator+=()}{39}{subsubsection.2.14.2.3}%
+\contentsline {subsubsection}{\numberline {2.14.2.4}operator-\/=()}{39}{subsubsection.2.14.2.4}%
+\contentsline {subsubsection}{\numberline {2.14.2.5}setVelocity()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{39}{subsubsection.2.14.2.5}%
+\contentsline {subsubsection}{\numberline {2.14.2.6}setVelocity()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{40}{subsubsection.2.14.2.6}%
+\contentsline {section}{\numberline {2.15}Node\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Scene Class Reference}{40}{section.2.15}%
+\contentsline {subsection}{\numberline {2.15.1}Detailed Description}{42}{subsection.2.15.1}%
+\contentsline {subsection}{\numberline {2.15.2}Constructor \& Destructor Documentation}{42}{subsection.2.15.2}%
+\contentsline {subsubsection}{\numberline {2.15.2.1}NodeScene()}{42}{subsubsection.2.15.2.1}%
+\contentsline {subsection}{\numberline {2.15.3}Member Function Documentation}{42}{subsection.2.15.3}%
+\contentsline {subsubsection}{\numberline {2.15.3.1}checkNodeCollision()}{42}{subsubsection.2.15.3.1}%
+\contentsline {subsubsection}{\numberline {2.15.3.2}GetAbsoluteTransform()}{44}{subsubsection.2.15.3.2}%
+\contentsline {subsubsection}{\numberline {2.15.3.3}getBoundingRect()}{44}{subsubsection.2.15.3.3}%
+\contentsline {subsubsection}{\numberline {2.15.3.4}interpretSignal()}{44}{subsubsection.2.15.3.4}%
+\contentsline {subsubsection}{\numberline {2.15.3.5}operator=()}{45}{subsubsection.2.15.3.5}%
+\contentsline {subsubsection}{\numberline {2.15.3.6}pin\_Node()}{45}{subsubsection.2.15.3.6}%
+\contentsline {subsubsection}{\numberline {2.15.3.7}unpin\_Node()}{45}{subsubsection.2.15.3.7}%
+\contentsline {subsubsection}{\numberline {2.15.3.8}update()}{46}{subsubsection.2.15.3.8}%
+\contentsline {section}{\numberline {2.16}Node\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Sprite Class Reference}{46}{section.2.16}%
+\contentsline {subsection}{\numberline {2.16.1}Detailed Description}{47}{subsection.2.16.1}%
+\contentsline {subsection}{\numberline {2.16.2}Constructor \& Destructor Documentation}{47}{subsection.2.16.2}%
+\contentsline {subsubsection}{\numberline {2.16.2.1}NodeSprite()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{47}{subsubsection.2.16.2.1}%
+\contentsline {subsubsection}{\numberline {2.16.2.2}NodeSprite()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{48}{subsubsection.2.16.2.2}%
+\contentsline {subsection}{\numberline {2.16.3}Member Function Documentation}{48}{subsection.2.16.3}%
+\contentsline {subsubsection}{\numberline {2.16.3.1}getBoundingRect()}{48}{subsubsection.2.16.3.1}%
+\contentsline {subsubsection}{\numberline {2.16.3.2}getLocalBounds()}{48}{subsubsection.2.16.3.2}%
+\contentsline {section}{\numberline {2.17}Pause\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}State Class Reference}{49}{section.2.17}%
+\contentsline {subsection}{\numberline {2.17.1}Detailed Description}{50}{subsection.2.17.1}%
+\contentsline {subsection}{\numberline {2.17.2}Constructor \& Destructor Documentation}{50}{subsection.2.17.2}%
+\contentsline {subsubsection}{\numberline {2.17.2.1}PauseState()}{50}{subsubsection.2.17.2.1}%
+\contentsline {subsection}{\numberline {2.17.3}Member Function Documentation}{50}{subsection.2.17.3}%
+\contentsline {subsubsection}{\numberline {2.17.3.1}handleEvent()}{50}{subsubsection.2.17.3.1}%
+\contentsline {subsubsection}{\numberline {2.17.3.2}update()}{51}{subsubsection.2.17.3.2}%
+\contentsline {section}{\numberline {2.18}Pipe Class Reference}{51}{section.2.18}%
+\contentsline {subsection}{\numberline {2.18.1}Detailed Description}{53}{subsection.2.18.1}%
+\contentsline {subsection}{\numberline {2.18.2}Constructor \& Destructor Documentation}{53}{subsection.2.18.2}%
+\contentsline {subsubsection}{\numberline {2.18.2.1}Pipe()}{53}{subsubsection.2.18.2.1}%
+\contentsline {subsection}{\numberline {2.18.3}Member Function Documentation}{53}{subsection.2.18.3}%
+\contentsline {subsubsection}{\numberline {2.18.3.1}drawThisNode()}{53}{subsubsection.2.18.3.1}%
+\contentsline {subsubsection}{\numberline {2.18.3.2}getBoundingRect()}{54}{subsubsection.2.18.3.2}%
+\contentsline {subsubsection}{\numberline {2.18.3.3}getCategory()}{54}{subsubsection.2.18.3.3}%
+\contentsline {section}{\numberline {2.19}Pipe\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Spawner Class Reference}{55}{section.2.19}%
+\contentsline {subsection}{\numberline {2.19.1}Detailed Description}{56}{subsection.2.19.1}%
+\contentsline {subsection}{\numberline {2.19.2}Constructor \& Destructor Documentation}{56}{subsection.2.19.2}%
+\contentsline {subsubsection}{\numberline {2.19.2.1}Pipe\_Spawner()}{56}{subsubsection.2.19.2.1}%
+\contentsline {subsection}{\numberline {2.19.3}Member Function Documentation}{56}{subsection.2.19.3}%
+\contentsline {subsubsection}{\numberline {2.19.3.1}getCategory()}{56}{subsubsection.2.19.3.1}%
+\contentsline {section}{\numberline {2.20}Resource\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Manager$<$ Resource\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Type, Identifier $>$ Class Template Reference}{57}{section.2.20}%
+\contentsline {subsection}{\numberline {2.20.1}Detailed Description}{57}{subsection.2.20.1}%
+\contentsline {subsection}{\numberline {2.20.2}Member Function Documentation}{58}{subsection.2.20.2}%
+\contentsline {subsubsection}{\numberline {2.20.2.1}get\_resource()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{58}{subsubsection.2.20.2.1}%
+\contentsline {subsubsection}{\numberline {2.20.2.2}get\_resource()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{58}{subsubsection.2.20.2.2}%
+\contentsline {subsubsection}{\numberline {2.20.2.3}load\_resource()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{58}{subsubsection.2.20.2.3}%
+\contentsline {subsubsection}{\numberline {2.20.2.4}load\_resource()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{59}{subsubsection.2.20.2.4}%
+\contentsline {section}{\numberline {2.21}Score Class Reference}{59}{section.2.21}%
+\contentsline {subsection}{\numberline {2.21.1}Detailed Description}{60}{subsection.2.21.1}%
+\contentsline {subsection}{\numberline {2.21.2}Constructor \& Destructor Documentation}{60}{subsection.2.21.2}%
+\contentsline {subsubsection}{\numberline {2.21.2.1}Score()}{60}{subsubsection.2.21.2.1}%
+\contentsline {subsection}{\numberline {2.21.3}Member Function Documentation}{60}{subsection.2.21.3}%
+\contentsline {subsubsection}{\numberline {2.21.3.1}draw()}{60}{subsubsection.2.21.3.1}%
+\contentsline {subsubsection}{\numberline {2.21.3.2}set\_score()}{61}{subsubsection.2.21.3.2}%
+\contentsline {subsubsection}{\numberline {2.21.3.3}setPosition()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{61}{subsubsection.2.21.3.3}%
+\contentsline {subsubsection}{\numberline {2.21.3.4}setPosition()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{61}{subsubsection.2.21.3.4}%
+\contentsline {section}{\numberline {2.22}Score\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}State Class Reference}{62}{section.2.22}%
+\contentsline {subsection}{\numberline {2.22.1}Detailed Description}{63}{subsection.2.22.1}%
+\contentsline {subsection}{\numberline {2.22.2}Constructor \& Destructor Documentation}{63}{subsection.2.22.2}%
+\contentsline {subsubsection}{\numberline {2.22.2.1}ScoreState()}{63}{subsubsection.2.22.2.1}%
+\contentsline {subsection}{\numberline {2.22.3}Member Function Documentation}{63}{subsection.2.22.3}%
+\contentsline {subsubsection}{\numberline {2.22.3.1}handleEvent()}{63}{subsubsection.2.22.3.1}%
+\contentsline {subsubsection}{\numberline {2.22.3.2}update()}{64}{subsubsection.2.22.3.2}%
+\contentsline {section}{\numberline {2.23}Signal Struct Reference}{64}{section.2.23}%
+\contentsline {subsection}{\numberline {2.23.1}Detailed Description}{65}{subsection.2.23.1}%
+\contentsline {section}{\numberline {2.24}Signals\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Queue Class Reference}{65}{section.2.24}%
+\contentsline {subsection}{\numberline {2.24.1}Detailed Description}{65}{subsection.2.24.1}%
+\contentsline {subsection}{\numberline {2.24.2}Member Function Documentation}{66}{subsection.2.24.2}%
+\contentsline {subsubsection}{\numberline {2.24.2.1}pop()}{66}{subsubsection.2.24.2.1}%
+\contentsline {subsubsection}{\numberline {2.24.2.2}push()}{66}{subsubsection.2.24.2.2}%
+\contentsline {section}{\numberline {2.25}State\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Stack$<$ State\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Type $>$ Class Template Reference}{66}{section.2.25}%
+\contentsline {subsection}{\numberline {2.25.1}Detailed Description}{67}{subsection.2.25.1}%
+\contentsline {subsection}{\numberline {2.25.2}Member Enumeration Documentation}{68}{subsection.2.25.2}%
+\contentsline {subsubsection}{\numberline {2.25.2.1}Operation}{68}{subsubsection.2.25.2.1}%
+\contentsline {subsection}{\numberline {2.25.3}Constructor \& Destructor Documentation}{68}{subsection.2.25.3}%
+\contentsline {subsubsection}{\numberline {2.25.3.1}StateStack()}{68}{subsubsection.2.25.3.1}%
+\contentsline {subsection}{\numberline {2.25.4}Member Function Documentation}{68}{subsection.2.25.4}%
+\contentsline {subsubsection}{\numberline {2.25.4.1}getLogs()}{68}{subsubsection.2.25.4.1}%
+\contentsline {subsubsection}{\numberline {2.25.4.2}handleEvent()}{69}{subsubsection.2.25.4.2}%
+\contentsline {subsubsection}{\numberline {2.25.4.3}isEmpty()}{69}{subsubsection.2.25.4.3}%
+\contentsline {subsubsection}{\numberline {2.25.4.4}loadState()}{69}{subsubsection.2.25.4.4}%
+\contentsline {subsubsection}{\numberline {2.25.4.5}operator+=()}{70}{subsubsection.2.25.4.5}%
+\contentsline {subsubsection}{\numberline {2.25.4.6}pushState()}{70}{subsubsection.2.25.4.6}%
+\contentsline {subsubsection}{\numberline {2.25.4.7}update()}{70}{subsubsection.2.25.4.7}%
+\contentsline {section}{\numberline {2.26}Title\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}State Class Reference}{71}{section.2.26}%
+\contentsline {subsection}{\numberline {2.26.1}Detailed Description}{72}{subsection.2.26.1}%
+\contentsline {subsection}{\numberline {2.26.2}Constructor \& Destructor Documentation}{72}{subsection.2.26.2}%
+\contentsline {subsubsection}{\numberline {2.26.2.1}TitleState()}{72}{subsubsection.2.26.2.1}%
+\contentsline {subsection}{\numberline {2.26.3}Member Function Documentation}{72}{subsection.2.26.3}%
+\contentsline {subsubsection}{\numberline {2.26.3.1}handleEvent()}{72}{subsubsection.2.26.3.1}%
+\contentsline {subsubsection}{\numberline {2.26.3.2}update()}{74}{subsubsection.2.26.3.2}%
+\contentsline {section}{\numberline {2.27}Window Class Reference}{74}{section.2.27}%
+\contentsline {subsection}{\numberline {2.27.1}Detailed Description}{75}{subsection.2.27.1}%
+\contentsline {subsection}{\numberline {2.27.2}Constructor \& Destructor Documentation}{75}{subsection.2.27.2}%
+\contentsline {subsubsection}{\numberline {2.27.2.1}Window()}{75}{subsubsection.2.27.2.1}%
+\contentsline {subsection}{\numberline {2.27.3}Member Function Documentation}{75}{subsection.2.27.3}%
+\contentsline {subsubsection}{\numberline {2.27.3.1}run()}{75}{subsubsection.2.27.3.1}%
+\contentsline {section}{\numberline {2.28}World Class Reference}{76}{section.2.28}%
+\contentsline {subsection}{\numberline {2.28.1}Detailed Description}{77}{subsection.2.28.1}%
+\contentsline {subsection}{\numberline {2.28.2}Constructor \& Destructor Documentation}{77}{subsection.2.28.2}%
+\contentsline {subsubsection}{\numberline {2.28.2.1}World()}{77}{subsubsection.2.28.2.1}%
+\contentsline {subsection}{\numberline {2.28.3}Member Function Documentation}{77}{subsection.2.28.3}%
+\contentsline {subsubsection}{\numberline {2.28.3.1}getSignalQueue()}{77}{subsubsection.2.28.3.1}%
+\contentsline {subsubsection}{\numberline {2.28.3.2}handleCollisions()}{77}{subsubsection.2.28.3.2}%
+\contentsline {subsubsection}{\numberline {2.28.3.3}update()}{78}{subsubsection.2.28.3.3}%
+\contentsline {chapter}{Index}{79}{section*.109}%

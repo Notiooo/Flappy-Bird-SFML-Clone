@@ -1,0 +1,7 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$class_general___state.html" title=" " alt="" coords="5,49,187,90"/>
+<area shape="rect" id="node2" href="$class_application___state.html" title="Application that controls flow of the game." alt="" coords="235,56,359,83"/>
+<area shape="rect" id="node3" href="$class_game_state.html" title="A state where the actual game starts." alt="" coords="408,5,496,32"/>
+<area shape="rect" id="node4" href="$class_pause_state.html" title="A state that allows the player to stop the game and then resume it again or leave the game." alt="" coords="407,56,497,83"/>
+<area shape="rect" id="node5" href="$class_title_state.html" title="A state displaying animated image of the creator." alt="" coords="413,107,491,133"/>
+</map>

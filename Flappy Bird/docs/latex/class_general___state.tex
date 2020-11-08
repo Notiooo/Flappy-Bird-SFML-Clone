@@ -1,0 +1,179 @@
+\hypertarget{class_general___state}{}\doxysection{General\+\_\+\+State$<$ State\+Type $>$ Class Template Reference}
+\label{class_general___state}\index{General\_State$<$ StateType $>$@{General\_State$<$ StateType $>$}}
+
+
+An abstract \mbox{\hyperlink{class_general___state}{General\+\_\+\+State}} other states can inherit from.  
+
+
+
+
+{\ttfamily \#include $<$General\+\_\+\+State.\+h$>$}
+
+
+
+Collaboration diagram for General\+\_\+\+State$<$ State\+Type $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=221pt]{class_general___state__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_general___state_ac129340e6a83771140c63fb2934f1f9d}{General\+\_\+\+State}} (\mbox{\hyperlink{class_state_stack}{State\+Stack}}$<$ State\+Type $>$ \&\mbox{\hyperlink{class_general___state_abea7b3b62db4591b47ec4a48f1ab8a32}{stack}})
+\begin{DoxyCompactList}\small\item\em Only the statestack is being initialized. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_general___state_a8e936bf0d947111de26411df93ba8f0b}\label{class_general___state_a8e936bf0d947111de26411df93ba8f0b}} 
+virtual \mbox{\hyperlink{class_general___state_a8e936bf0d947111de26411df93ba8f0b}{$\sim$\+General\+\_\+\+State}} ()
+\begin{DoxyCompactList}\small\item\em Declared for the purpose of correct implementation of the inheritance. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{class_general___state_a4e6d92d3b00a069c792de61b9d54e0f9}{update}} (sf\+::\+Time dt)=0
+\begin{DoxyCompactList}\small\item\em Updates the status of this state. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_general___state_a0ec88fa222951eb120ebe64642cd9ada}\label{class_general___state_a0ec88fa222951eb120ebe64642cd9ada}} 
+virtual void \mbox{\hyperlink{class_general___state_a0ec88fa222951eb120ebe64642cd9ada}{draw}} ()=0
+\begin{DoxyCompactList}\small\item\em Draws this state. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{class_general___state_ac4dd66d0d4b47d0902678d7de6c277c2}{handle\+Event}} (const sf\+::\+Event \&event)=0
+\begin{DoxyCompactList}\small\item\em Handles all events for this state. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_general___state_ac0610bd4b3a7bbc1b82e9282a7f5361f}{request\+Stack\+Push}} (States\+::\+ID state)
+\begin{DoxyCompactList}\small\item\em Sends a request to the stack to push the state to the stack. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_general___state_ae452079242a3fd5bc3f11f6aaf62565a}{request\+Stack\+Pop}} ()
+\begin{DoxyCompactList}\small\item\em Sends a request to the stack to pop state (from the top) from the stack. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_general___state_a4fd0a4918aa0014793e8604ee5ae2b1d}{request\+Stack\+Clear}} ()
+\begin{DoxyCompactList}\small\item\em Sends a request to clear the stack. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_general___state_abea7b3b62db4591b47ec4a48f1ab8a32}\label{class_general___state_abea7b3b62db4591b47ec4a48f1ab8a32}} 
+\mbox{\hyperlink{class_state_stack}{State\+Stack}}$<$ State\+Type $>$ $\ast$ \mbox{\hyperlink{class_general___state_abea7b3b62db4591b47ec4a48f1ab8a32}{stack}}
+\begin{DoxyCompactList}\small\item\em Pointer to the stack to which this state belongs. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename State\+Type$>$\newline
+class General\+\_\+\+State$<$ State\+Type $>$}
+
+An abstract \mbox{\hyperlink{class_general___state}{General\+\_\+\+State}} other states can inherit from. 
+
+This abstract class defines all general behaviours of the State like for example\+: 1) request Push -- push given state onto the stack 2) request Pop -- pops state from the top of the stack 3) request Clear -- clears the stack
+
+Also it defines some typical S\+F\+ML functions like\+: update, draw or handle events.
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em State\+Type} & type of the State so it can be a General State of specfic \mbox{\hyperlink{class_state_stack}{State\+Stack}} of given type. \\
+\hline
+\end{DoxyTemplParams}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_general___state_ac129340e6a83771140c63fb2934f1f9d}\label{class_general___state_ac129340e6a83771140c63fb2934f1f9d}} 
+\index{General\_State$<$ StateType $>$@{General\_State$<$ StateType $>$}!General\_State@{General\_State}}
+\index{General\_State@{General\_State}!General\_State$<$ StateType $>$@{General\_State$<$ StateType $>$}}
+\doxysubsubsection{\texorpdfstring{General\_State()}{General\_State()}}
+{\footnotesize\ttfamily template$<$typename State\+Type $>$ \\
+\mbox{\hyperlink{class_general___state}{General\+\_\+\+State}}$<$ State\+Type $>$\+::\mbox{\hyperlink{class_general___state}{General\+\_\+\+State}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_state_stack}{State\+Stack}}$<$ State\+Type $>$ \&}]{stack }\end{DoxyParamCaption})}
+
+
+
+Only the statestack is being initialized. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em stack} & The stack that stores this state \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_general___state_ac4dd66d0d4b47d0902678d7de6c277c2}\label{class_general___state_ac4dd66d0d4b47d0902678d7de6c277c2}} 
+\index{General\_State$<$ StateType $>$@{General\_State$<$ StateType $>$}!handleEvent@{handleEvent}}
+\index{handleEvent@{handleEvent}!General\_State$<$ StateType $>$@{General\_State$<$ StateType $>$}}
+\doxysubsubsection{\texorpdfstring{handleEvent()}{handleEvent()}}
+{\footnotesize\ttfamily template$<$typename State\+Type $>$ \\
+virtual bool \mbox{\hyperlink{class_general___state}{General\+\_\+\+State}}$<$ State\+Type $>$\+::handle\+Event (\begin{DoxyParamCaption}\item[{const sf\+::\+Event \&}]{event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Handles all events for this state. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em event} & Events stored in the window. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+If false, this is information to stop to handle events on the lower layers of the stack. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_bird___state_aeae81e2dee142632ff23e8fdb878f5f4}{Bird\+\_\+\+State}}, \mbox{\hyperlink{class_application___state_a714e3a740cb2c9e70705c402a60bcff6}{Application\+\_\+\+State}}, \mbox{\hyperlink{class_game_state_a063c526c647305d7bac9ae95b3f9078f}{Game\+State}}, \mbox{\hyperlink{class_title_state_af9e452529d3c3eeb4b8ee89cf8cb2ddf}{Title\+State}}, \mbox{\hyperlink{class_pause_state_a655928c17ca2e78c98d028fed78257ac}{Pause\+State}}, \mbox{\hyperlink{class_flapping_state_ab3245ddf67b37f47c0d0aa24d63d4773}{Flapping\+State}}, \mbox{\hyperlink{class_score_state_a139a69227498df1e8b1d6a554b06d92c}{Score\+State}}, \mbox{\hyperlink{class_flying_state_a8e7f0c8f4a8b8751af487059ffadf4e1}{Flying\+State}}, \mbox{\hyperlink{class_ground_state_ae5c339ff4d2660a239064564523f86c7}{Ground\+State}}, and \mbox{\hyperlink{class_hit_state_a3229df6698c03eac94e768845301d72d}{Hit\+State}}.
+
+\mbox{\Hypertarget{class_general___state_a4fd0a4918aa0014793e8604ee5ae2b1d}\label{class_general___state_a4fd0a4918aa0014793e8604ee5ae2b1d}} 
+\index{General\_State$<$ StateType $>$@{General\_State$<$ StateType $>$}!requestStackClear@{requestStackClear}}
+\index{requestStackClear@{requestStackClear}!General\_State$<$ StateType $>$@{General\_State$<$ StateType $>$}}
+\doxysubsubsection{\texorpdfstring{requestStackClear()}{requestStackClear()}}
+{\footnotesize\ttfamily template$<$typename State\+Type $>$ \\
+void \mbox{\hyperlink{class_general___state}{General\+\_\+\+State}}$<$ State\+Type $>$\+::request\+Stack\+Clear\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Sends a request to clear the stack. 
+
+Ask for the clear -- but it can\textquotesingle{}t do it instantly, because it would be program breaking, so it request for it to be done in next frame. The request lands in the queue, which will be read in the next loop run. \mbox{\Hypertarget{class_general___state_ae452079242a3fd5bc3f11f6aaf62565a}\label{class_general___state_ae452079242a3fd5bc3f11f6aaf62565a}} 
+\index{General\_State$<$ StateType $>$@{General\_State$<$ StateType $>$}!requestStackPop@{requestStackPop}}
+\index{requestStackPop@{requestStackPop}!General\_State$<$ StateType $>$@{General\_State$<$ StateType $>$}}
+\doxysubsubsection{\texorpdfstring{requestStackPop()}{requestStackPop()}}
+{\footnotesize\ttfamily template$<$typename State\+Type $>$ \\
+void \mbox{\hyperlink{class_general___state}{General\+\_\+\+State}}$<$ State\+Type $>$\+::request\+Stack\+Pop\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Sends a request to the stack to pop state (from the top) from the stack. 
+
+Ask for the pop -- but it can\textquotesingle{}t do it instantly, because it would be program breaking, so it request for it to be done in next frame. The request lands in the queue, which will be read in the next loop run. \mbox{\Hypertarget{class_general___state_ac0610bd4b3a7bbc1b82e9282a7f5361f}\label{class_general___state_ac0610bd4b3a7bbc1b82e9282a7f5361f}} 
+\index{General\_State$<$ StateType $>$@{General\_State$<$ StateType $>$}!requestStackPush@{requestStackPush}}
+\index{requestStackPush@{requestStackPush}!General\_State$<$ StateType $>$@{General\_State$<$ StateType $>$}}
+\doxysubsubsection{\texorpdfstring{requestStackPush()}{requestStackPush()}}
+{\footnotesize\ttfamily template$<$typename State\+Type $>$ \\
+void \mbox{\hyperlink{class_general___state}{General\+\_\+\+State}}$<$ State\+Type $>$\+::request\+Stack\+Push (\begin{DoxyParamCaption}\item[{States\+::\+ID}]{state }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Sends a request to the stack to push the state to the stack. 
+
+Ask for the push -- but it can\textquotesingle{}t do it instantly, because it would be program breaking, so it request for it to be done in next frame. The request lands in the queue, which will be read in the next loop run. 
+\begin{DoxyParams}{Parameters}
+{\em state} & The identifier of the state to push onto the stack. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_general___state_a4e6d92d3b00a069c792de61b9d54e0f9}\label{class_general___state_a4e6d92d3b00a069c792de61b9d54e0f9}} 
+\index{General\_State$<$ StateType $>$@{General\_State$<$ StateType $>$}!update@{update}}
+\index{update@{update}!General\_State$<$ StateType $>$@{General\_State$<$ StateType $>$}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily template$<$typename State\+Type $>$ \\
+virtual bool \mbox{\hyperlink{class_general___state}{General\+\_\+\+State}}$<$ State\+Type $>$\+::update (\begin{DoxyParamCaption}\item[{sf\+::\+Time}]{dt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Updates the status of this state. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dt} & The time elapsed between the previous and the new frame. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+If false, this is information to stop the update on the lower layers of the stack. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_bird___state_a5f893677838712fb1d5bea7aa8c23968}{Bird\+\_\+\+State}}, \mbox{\hyperlink{class_application___state_a5478f7c19e06db5ccd3fa309e6a9b950}{Application\+\_\+\+State}}, \mbox{\hyperlink{class_game_state_a0b13d7c27239f0cfc7260955a960d045}{Game\+State}}, \mbox{\hyperlink{class_title_state_a722fcb2a30f05ea3821ea1ed4c841eec}{Title\+State}}, \mbox{\hyperlink{class_pause_state_a534fe408bf762e3d0f9b4cc6d4cb4cec}{Pause\+State}}, \mbox{\hyperlink{class_flapping_state_a6c8b422fa79a16e394891219c21935e6}{Flapping\+State}}, \mbox{\hyperlink{class_score_state_aa976357fe35a96d68ec00027d31de97b}{Score\+State}}, \mbox{\hyperlink{class_flying_state_aebc9679bf0ae1becd00983009f9e0fc1}{Flying\+State}}, \mbox{\hyperlink{class_ground_state_a5b41de109abe03d29765fa6fe3c0a608}{Ground\+State}}, and \mbox{\hyperlink{class_hit_state_a07e96dac11910bd0e66e47c588db399a}{Hit\+State}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Flappy Bird/\+States/General\+\_\+\+State.\+h\end{DoxyCompactItemize}

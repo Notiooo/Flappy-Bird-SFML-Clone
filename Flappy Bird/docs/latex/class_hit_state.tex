@@ -1,0 +1,121 @@
+\hypertarget{class_hit_state}{}\doxysection{Hit\+State Class Reference}
+\label{class_hit_state}\index{HitState@{HitState}}
+
+
+This is a condition that starts when a player hits a pipe with a bird.  
+
+
+
+
+{\ttfamily \#include $<$Hit\+State.\+h$>$}
+
+
+
+Inheritance diagram for Hit\+State\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=185pt]{class_hit_state__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Hit\+State\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_hit_state__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_hit_state_a14c7d76f080945b3dbf667d383dd66cf}{Hit\+State}} (\mbox{\hyperlink{class_state_stack}{State\+Stack}}$<$ \mbox{\hyperlink{class_bird___state}{Bird\+\_\+\+State}} $>$ \&statestack, \mbox{\hyperlink{struct_bird___state_1_1_game___data}{Game\+\_\+\+Data}} gamedata)
+\begin{DoxyCompactList}\small\item\em Initializes variables. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_hit_state_a412eff08be02fbaa670dff8cfb584e5d}\label{class_hit_state_a412eff08be02fbaa670dff8cfb584e5d}} 
+virtual void \mbox{\hyperlink{class_hit_state_a412eff08be02fbaa670dff8cfb584e5d}{draw}} ()
+\begin{DoxyCompactList}\small\item\em Draws this state. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{class_hit_state_a07e96dac11910bd0e66e47c588db399a}{update}} (sf\+::\+Time dt)
+\begin{DoxyCompactList}\small\item\em Updates the status of this state (informations in it) \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{class_hit_state_a3229df6698c03eac94e768845301d72d}{handle\+Event}} (const sf\+::\+Event \&event)
+\begin{DoxyCompactList}\small\item\em Handles all events for this state. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+This is a condition that starts when a player hits a pipe with a bird. 
+
+The player is deprived of all bird control here. The bird is facing the ground and moving at high speed towards it. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_hit_state_a14c7d76f080945b3dbf667d383dd66cf}\label{class_hit_state_a14c7d76f080945b3dbf667d383dd66cf}} 
+\index{HitState@{HitState}!HitState@{HitState}}
+\index{HitState@{HitState}!HitState@{HitState}}
+\doxysubsubsection{\texorpdfstring{HitState()}{HitState()}}
+{\footnotesize\ttfamily Hit\+State\+::\+Hit\+State (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_state_stack}{State\+Stack}}$<$ \mbox{\hyperlink{class_bird___state}{Bird\+\_\+\+State}} $>$ \&}]{statestack,  }\item[{\mbox{\hyperlink{struct_bird___state_1_1_game___data}{Game\+\_\+\+Data}}}]{gamedata }\end{DoxyParamCaption})}
+
+
+
+Initializes variables. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em statestack} & The state stack to which this state belongs. \\
+\hline
+{\em gamedata} & Data to be transmitted to the states \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_hit_state_a3229df6698c03eac94e768845301d72d}\label{class_hit_state_a3229df6698c03eac94e768845301d72d}} 
+\index{HitState@{HitState}!handleEvent@{handleEvent}}
+\index{handleEvent@{handleEvent}!HitState@{HitState}}
+\doxysubsubsection{\texorpdfstring{handleEvent()}{handleEvent()}}
+{\footnotesize\ttfamily virtual bool Hit\+State\+::handle\+Event (\begin{DoxyParamCaption}\item[{const sf\+::\+Event \&}]{event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Handles all events for this state. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em event} & Events stored in the window. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+If false, this is information to stop to handle events on the lower layers of the stack. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_bird___state_aeae81e2dee142632ff23e8fdb878f5f4}{Bird\+\_\+\+State}}.
+
+\mbox{\Hypertarget{class_hit_state_a07e96dac11910bd0e66e47c588db399a}\label{class_hit_state_a07e96dac11910bd0e66e47c588db399a}} 
+\index{HitState@{HitState}!update@{update}}
+\index{update@{update}!HitState@{HitState}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily virtual bool Hit\+State\+::update (\begin{DoxyParamCaption}\item[{sf\+::\+Time}]{dt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Updates the status of this state (informations in it) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dt} & The time elapsed between the previous and the new frame. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+If false, this is information to stop the update on the lower layers of the stack. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_bird___state_a5f893677838712fb1d5bea7aa8c23968}{Bird\+\_\+\+State}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Flappy Bird/\+States/\+Bird States/Hit\+State.\+h\end{DoxyCompactItemize}

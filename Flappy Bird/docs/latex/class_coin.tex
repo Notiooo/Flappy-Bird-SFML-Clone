@@ -1,0 +1,104 @@
+\hypertarget{class_coin}{}\doxysection{Coin Class Reference}
+\label{class_coin}\index{Coin@{Coin}}
+
+
+Invisible coin adding a point after collection.  
+
+
+
+
+{\ttfamily \#include $<$Coin.\+h$>$}
+
+
+
+Inheritance diagram for Coin\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_coin__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Coin\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_coin__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_coin_a5bca7adcea8566c68ae74b9cdc85df74}{Coin}} (sf\+::\+Vector2f vec, \mbox{\hyperlink{class_bird}{Bird}} \&the\+Player)
+\begin{DoxyCompactList}\small\item\em Standard object initialization and setting up. \end{DoxyCompactList}\item 
+sf\+::\+Float\+Rect \mbox{\hyperlink{class_coin_a1588a284c072485a9ade15019bb5edf4}{get\+Bounding\+Rect}} () const
+\begin{DoxyCompactList}\small\item\em Give the Rect of the object -- a certain box surrounding this object in size. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_coin_a531bbc9ed8c87f0aac3d3661d4439735}{set\+Position}} (sf\+::\+Vector2f vec)
+\begin{DoxyCompactList}\small\item\em This function sets the positions of this object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Invisible coin adding a point after collection. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_coin_a5bca7adcea8566c68ae74b9cdc85df74}\label{class_coin_a5bca7adcea8566c68ae74b9cdc85df74}} 
+\index{Coin@{Coin}!Coin@{Coin}}
+\index{Coin@{Coin}!Coin@{Coin}}
+\doxysubsubsection{\texorpdfstring{Coin()}{Coin()}}
+{\footnotesize\ttfamily Coin\+::\+Coin (\begin{DoxyParamCaption}\item[{sf\+::\+Vector2f}]{vec,  }\item[{\mbox{\hyperlink{class_bird}{Bird}} \&}]{the\+Player }\end{DoxyParamCaption})}
+
+
+
+Standard object initialization and setting up. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vec} & Vector that says where this object should be placed \\
+\hline
+{\em the\+Player} & Reference to the object of the bird, which the player controls. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_coin_a1588a284c072485a9ade15019bb5edf4}\label{class_coin_a1588a284c072485a9ade15019bb5edf4}} 
+\index{Coin@{Coin}!getBoundingRect@{getBoundingRect}}
+\index{getBoundingRect@{getBoundingRect}!Coin@{Coin}}
+\doxysubsubsection{\texorpdfstring{getBoundingRect()}{getBoundingRect()}}
+{\footnotesize\ttfamily sf\+::\+Float\+Rect Coin\+::get\+Bounding\+Rect (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Give the Rect of the object -- a certain box surrounding this object in size. 
+
+\begin{DoxyReturn}{Returns}
+The Rect of this object 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_node_scene_aa511677543749633db4be90ef88b937e}{Node\+Scene}}.
+
+\mbox{\Hypertarget{class_coin_a531bbc9ed8c87f0aac3d3661d4439735}\label{class_coin_a531bbc9ed8c87f0aac3d3661d4439735}} 
+\index{Coin@{Coin}!setPosition@{setPosition}}
+\index{setPosition@{setPosition}!Coin@{Coin}}
+\doxysubsubsection{\texorpdfstring{setPosition()}{setPosition()}}
+{\footnotesize\ttfamily void Coin\+::set\+Position (\begin{DoxyParamCaption}\item[{sf\+::\+Vector2f}]{vec }\end{DoxyParamCaption})}
+
+
+
+This function sets the positions of this object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vec} & Position at which the object is to be positioned \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Flappy Bird/\+Nodes/\+Specified Nodes/Coin.\+h\end{DoxyCompactItemize}

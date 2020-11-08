@@ -1,0 +1,118 @@
+\hypertarget{class_world}{}\doxysection{World Class Reference}
+\label{class_world}\index{World@{World}}
+
+
+A game world class that includes everything that happens inside the game world.  
+
+
+
+
+{\ttfamily \#include $<$World.\+h$>$}
+
+
+
+Inheritance diagram for World\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=154pt]{class_world__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for World\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=154pt]{class_world__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_world_a4456e8e6f4613193f10e635037ca99e8}{World}} (sf\+::\+Render\+Window \&window, \mbox{\hyperlink{class_bird}{Bird}} $\ast$\&bird)
+\begin{DoxyCompactList}\small\item\em The designer of the game world. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_signals___queue}{Signals\+\_\+\+Queue}} \& \mbox{\hyperlink{class_world_aee1b0eadf21733db27d9cf3d66dad78e}{get\+Signal\+Queue}} ()
+\item 
+\mbox{\Hypertarget{class_world_adeda82b4b34f8b269336b663b3b31515}\label{class_world_adeda82b4b34f8b269336b663b3b31515}} 
+void \mbox{\hyperlink{class_world_adeda82b4b34f8b269336b663b3b31515}{reset\+World}} ()
+\begin{DoxyCompactList}\small\item\em Removes all objects in the main scene \char`\"{}root\+\_\+scene\char`\"{} and creates them again. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_world_ac7b3a3923c95b812ec2d00d97c8cd56e}{update}} (sf\+::\+Time dt)
+\begin{DoxyCompactList}\small\item\em Updates the status of all objects inside the game world. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_world_ab51a17ccbb108616daacd0c34973dc8d}\label{class_world_ab51a17ccbb108616daacd0c34973dc8d}} 
+void \mbox{\hyperlink{class_world_ab51a17ccbb108616daacd0c34973dc8d}{draw}} ()
+\begin{DoxyCompactList}\small\item\em Draw all objects inside the game world. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_world_ae8c2ca3745dacccc7183f677fbe89673}{handle\+Collisions}} ()
+\begin{DoxyCompactList}\small\item\em It checks if there have been any collisions in the game world between the player and the environment. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A game world class that includes everything that happens inside the game world. 
+
+It stores the main scene called \char`\"{}root\+\_\+scene\char`\"{}. Draws all objects and sets them according to the layers on the main game scene. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_world_a4456e8e6f4613193f10e635037ca99e8}\label{class_world_a4456e8e6f4613193f10e635037ca99e8}} 
+\index{World@{World}!World@{World}}
+\index{World@{World}!World@{World}}
+\doxysubsubsection{\texorpdfstring{World()}{World()}}
+{\footnotesize\ttfamily World\+::\+World (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Window \&}]{window,  }\item[{\mbox{\hyperlink{class_bird}{Bird}} $\ast$\&}]{bird }\end{DoxyParamCaption})}
+
+
+
+The designer of the game world. 
+
+In its current state, it calls up a function that reads textures, and creates a scene. 
+\begin{DoxyParams}{Parameters}
+{\em window} & The window to which we draw objects. \\
+\hline
+{\em bird} & The player\textquotesingle{}s object -- the bird that the player controls. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_world_aee1b0eadf21733db27d9cf3d66dad78e}\label{class_world_aee1b0eadf21733db27d9cf3d66dad78e}} 
+\index{World@{World}!getSignalQueue@{getSignalQueue}}
+\index{getSignalQueue@{getSignalQueue}!World@{World}}
+\doxysubsubsection{\texorpdfstring{getSignalQueue()}{getSignalQueue()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_signals___queue}{Signals\+\_\+\+Queue}}\& World\+::get\+Signal\+Queue (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+Reference to Queue of Signals 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_world_ae8c2ca3745dacccc7183f677fbe89673}\label{class_world_ae8c2ca3745dacccc7183f677fbe89673}} 
+\index{World@{World}!handleCollisions@{handleCollisions}}
+\index{handleCollisions@{handleCollisions}!World@{World}}
+\doxysubsubsection{\texorpdfstring{handleCollisions()}{handleCollisions()}}
+{\footnotesize\ttfamily bool World\+::handle\+Collisions (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+It checks if there have been any collisions in the game world between the player and the environment. 
+
+It checks for collisions on each scene between players. Assigns the type of collision that occurred and assigns it to a variable inside the \mbox{\hyperlink{class_bird}{Bird}} class. \begin{DoxyReturn}{Returns}
+True if there are collisions between the player and the environment. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_world_ac7b3a3923c95b812ec2d00d97c8cd56e}\label{class_world_ac7b3a3923c95b812ec2d00d97c8cd56e}} 
+\index{World@{World}!update@{update}}
+\index{update@{update}!World@{World}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void World\+::update (\begin{DoxyParamCaption}\item[{sf\+::\+Time}]{dt }\end{DoxyParamCaption})}
+
+
+
+Updates the status of all objects inside the game world. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dt} & The time elapsed between the previous and the new frame. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Flappy Bird/World.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,13 @@
+<map id="NodeScene" name="NodeScene">
+<area shape="rect" id="node1" title="The class is a kind of &quot;canvas&quot; on which we can draw certain objects and combine them." alt="" coords="153,80,243,107"/>
+<area shape="rect" id="node5" href="$class_coin.html" title="Invisible coin adding a point after collection." alt="" coords="27,155,75,181"/>
+<area shape="rect" id="node6" href="$class_node_entity.html" title="The kind of scene that contains movement A specific type of scene that contains physical elements suc..." alt="" coords="100,155,187,181"/>
+<area shape="rect" id="node9" href="$class_node_sprite.html" title="The kind of scene that includes &quot;Sprite&quot; and the operations associated with it." alt="" coords="211,155,297,181"/>
+<area shape="rect" id="node11" href="$class_pipe___spawner.html" title="A pipe generator which, based on the given parameters, generates pipes at appropriate speed and at ap..." alt="" coords="321,155,427,181"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,5,127,32"/>
+<area shape="rect" id="node3" title=" " alt="" coords="151,5,245,32"/>
+<area shape="rect" id="node4" title=" " alt="" coords="269,5,386,32"/>
+<area shape="rect" id="node7" href="$class_bird.html" title="The main object of the bird, which the player controls." alt="" coords="58,229,103,256"/>
+<area shape="rect" id="node8" href="$class_pipe.html" title="A pipe is an object that can move." alt="" coords="127,229,175,256"/>
+<area shape="rect" id="node10" href="$class_ground_node.html" title="A node of the floor, which moves continuously to the left." alt="" coords="207,229,301,256"/>
+</map>

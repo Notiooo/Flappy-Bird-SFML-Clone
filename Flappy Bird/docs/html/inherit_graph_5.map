@@ -1,0 +1,13 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" title=" " alt="" coords="17,56,92,83"/>
+<area shape="rect" id="node2" href="$class_node_scene.html" title="The class is a kind of &quot;canvas&quot; on which we can draw certain objects and combine them." alt="" coords="152,56,241,83"/>
+<area shape="rect" id="node3" href="$class_coin.html" title="Invisible coin adding a point after collection." alt="" coords="318,5,366,32"/>
+<area shape="rect" id="node4" href="$class_node_entity.html" title=" " alt="" coords="291,56,393,83"/>
+<area shape="rect" id="node7" href="$class_node_sprite.html" title="The kind of scene that includes &quot;Sprite&quot; and the operations associated with it." alt="" coords="299,107,385,133"/>
+<area shape="rect" id="node9" href="$class_pipe___spawner.html" title="A pipe generator which, based on the given parameters, generates pipes at appropriate speed and at ap..." alt="" coords="289,157,395,184"/>
+<area shape="rect" id="node5" href="$class_bird.html" title="The main object of the bird, which the player controls." alt="" coords="467,5,513,32"/>
+<area shape="rect" id="node6" href="$class_pipe.html" title="A pipe is an object that can move." alt="" coords="466,56,514,83"/>
+<area shape="rect" id="node8" href="$class_ground_node.html" title="A node of the floor, which moves continuously to the left." alt="" coords="443,107,537,133"/>
+<area shape="rect" id="node10" title=" " alt="" coords="5,107,104,133"/>
+<area shape="rect" id="node11" href="$class_world.html" title="A game world class that includes everything that happens inside the game world." alt="" coords="169,107,225,133"/>
+</map>

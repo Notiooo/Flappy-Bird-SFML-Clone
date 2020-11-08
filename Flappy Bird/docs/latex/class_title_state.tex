@@ -1,0 +1,121 @@
+\hypertarget{class_title_state}{}\doxysection{Title\+State Class Reference}
+\label{class_title_state}\index{TitleState@{TitleState}}
+
+
+A state displaying animated image of the creator.  
+
+
+
+
+{\ttfamily \#include $<$Title\+State.\+h$>$}
+
+
+
+Inheritance diagram for Title\+State\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=216pt]{class_title_state__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Title\+State\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=216pt]{class_title_state__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_title_state_ad778c20dc2c4e717f37dd2d201fdaedc}{Title\+State}} (\mbox{\hyperlink{class_state_stack}{State\+Stack}}$<$ \mbox{\hyperlink{class_application___state}{Application\+\_\+\+State}} $>$ \&\mbox{\hyperlink{class_general___state_abea7b3b62db4591b47ec4a48f1ab8a32}{stack}}, \mbox{\hyperlink{struct_application___state_1_1_game___data}{Game\+\_\+\+Data}} game\+\_\+data)
+\begin{DoxyCompactList}\small\item\em Initializes variables and extracts individual frames from the spritesheet and pushes them into the \char`\"{}background\char`\"{} vector. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_title_state_a0626f31f769d6f88eccc4880c153a0d2}\label{class_title_state_a0626f31f769d6f88eccc4880c153a0d2}} 
+virtual void \mbox{\hyperlink{class_title_state_a0626f31f769d6f88eccc4880c153a0d2}{draw}} ()
+\begin{DoxyCompactList}\small\item\em Draws this state. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{class_title_state_a722fcb2a30f05ea3821ea1ed4c841eec}{update}} (sf\+::\+Time dt)
+\begin{DoxyCompactList}\small\item\em Updates the status of this state (informations in it) \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{class_title_state_af9e452529d3c3eeb4b8ee89cf8cb2ddf}{handle\+Event}} (const sf\+::\+Event \&event)
+\begin{DoxyCompactList}\small\item\em Handles all events for this state. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+A state displaying animated image of the creator. 
+
+This state is pushed only at beginning of the program, as a kind of representation of the author. It displays an animated image for few seconds, and then it moves to the Game State. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_title_state_ad778c20dc2c4e717f37dd2d201fdaedc}\label{class_title_state_ad778c20dc2c4e717f37dd2d201fdaedc}} 
+\index{TitleState@{TitleState}!TitleState@{TitleState}}
+\index{TitleState@{TitleState}!TitleState@{TitleState}}
+\doxysubsubsection{\texorpdfstring{TitleState()}{TitleState()}}
+{\footnotesize\ttfamily Title\+State\+::\+Title\+State (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_state_stack}{State\+Stack}}$<$ \mbox{\hyperlink{class_application___state}{Application\+\_\+\+State}} $>$ \&}]{stack,  }\item[{\mbox{\hyperlink{struct_application___state_1_1_game___data}{Game\+\_\+\+Data}}}]{game\+\_\+data }\end{DoxyParamCaption})}
+
+
+
+Initializes variables and extracts individual frames from the spritesheet and pushes them into the \char`\"{}background\char`\"{} vector. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em stack} & The state stack to which this state belongs. \\
+\hline
+{\em game\+\_\+data} & Data to be transmitted to the states \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_title_state_af9e452529d3c3eeb4b8ee89cf8cb2ddf}\label{class_title_state_af9e452529d3c3eeb4b8ee89cf8cb2ddf}} 
+\index{TitleState@{TitleState}!handleEvent@{handleEvent}}
+\index{handleEvent@{handleEvent}!TitleState@{TitleState}}
+\doxysubsubsection{\texorpdfstring{handleEvent()}{handleEvent()}}
+{\footnotesize\ttfamily virtual bool Title\+State\+::handle\+Event (\begin{DoxyParamCaption}\item[{const sf\+::\+Event \&}]{event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Handles all events for this state. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em event} & Events stored in the window. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+If false, this is information to stop to handle events on the lower layers of the stack. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_application___state_a714e3a740cb2c9e70705c402a60bcff6}{Application\+\_\+\+State}}.
+
+\mbox{\Hypertarget{class_title_state_a722fcb2a30f05ea3821ea1ed4c841eec}\label{class_title_state_a722fcb2a30f05ea3821ea1ed4c841eec}} 
+\index{TitleState@{TitleState}!update@{update}}
+\index{update@{update}!TitleState@{TitleState}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily virtual bool Title\+State\+::update (\begin{DoxyParamCaption}\item[{sf\+::\+Time}]{dt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Updates the status of this state (informations in it) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dt} & The time elapsed between the previous and the new frame. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+If false, this is information to stop the update on the lower layers of the stack. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_application___state_a5478f7c19e06db5ccd3fa309e6a9b950}{Application\+\_\+\+State}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Flappy Bird/\+States/\+Game States/Title\+State.\+h\end{DoxyCompactItemize}

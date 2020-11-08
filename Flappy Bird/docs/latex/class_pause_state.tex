@@ -1,0 +1,123 @@
+\hypertarget{class_pause_state}{}\doxysection{Pause\+State Class Reference}
+\label{class_pause_state}\index{PauseState@{PauseState}}
+
+
+A state that allows the player to stop the game and then resume it again or leave the game.  
+
+
+
+
+{\ttfamily \#include $<$Pause\+State.\+h$>$}
+
+
+
+Inheritance diagram for Pause\+State\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=216pt]{class_pause_state__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Pause\+State\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=216pt]{class_pause_state__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_pause_state_a75a6c0b31c2826552057a74f8c81506c}{Pause\+State}} (\mbox{\hyperlink{class_state_stack}{State\+Stack}}$<$ \mbox{\hyperlink{class_application___state}{Application\+\_\+\+State}} $>$ \&state, \mbox{\hyperlink{struct_application___state_1_1_game___data}{Game\+\_\+\+Data}} game\+\_\+data)
+\begin{DoxyCompactList}\small\item\em Initializes variables and prepares a graphical pause screen scene. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_pause_state_aa8b7af8bba45641c2955c059332a0ba4}\label{class_pause_state_aa8b7af8bba45641c2955c059332a0ba4}} 
+virtual void \mbox{\hyperlink{class_pause_state_aa8b7af8bba45641c2955c059332a0ba4}{draw}} ()
+\begin{DoxyCompactList}\small\item\em Draws this state. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{class_pause_state_a534fe408bf762e3d0f9b4cc6d4cb4cec}{update}} (sf\+::\+Time dt)
+\begin{DoxyCompactList}\small\item\em Updates the status of this state (informations in it) \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{class_pause_state_a655928c17ca2e78c98d028fed78257ac}{handle\+Event}} (const sf\+::\+Event \&event)
+\begin{DoxyCompactList}\small\item\em Handles all events for this state. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+A state that allows the player to stop the game and then resume it again or leave the game. 
+
+This state is rather superimposed on other states. It draws a semi-\/transparent and dark colour on the screen, and displays information about the game state and how to get out.
+
+It also blocks the states that have been superimposed underneath it, so that time does not flow in the game. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_pause_state_a75a6c0b31c2826552057a74f8c81506c}\label{class_pause_state_a75a6c0b31c2826552057a74f8c81506c}} 
+\index{PauseState@{PauseState}!PauseState@{PauseState}}
+\index{PauseState@{PauseState}!PauseState@{PauseState}}
+\doxysubsubsection{\texorpdfstring{PauseState()}{PauseState()}}
+{\footnotesize\ttfamily Pause\+State\+::\+Pause\+State (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_state_stack}{State\+Stack}}$<$ \mbox{\hyperlink{class_application___state}{Application\+\_\+\+State}} $>$ \&}]{state,  }\item[{\mbox{\hyperlink{struct_application___state_1_1_game___data}{Game\+\_\+\+Data}}}]{game\+\_\+data }\end{DoxyParamCaption})}
+
+
+
+Initializes variables and prepares a graphical pause screen scene. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em state} & The state stack to which this state belongs. \\
+\hline
+{\em game\+\_\+data} & Data to be transmitted to the states \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_pause_state_a655928c17ca2e78c98d028fed78257ac}\label{class_pause_state_a655928c17ca2e78c98d028fed78257ac}} 
+\index{PauseState@{PauseState}!handleEvent@{handleEvent}}
+\index{handleEvent@{handleEvent}!PauseState@{PauseState}}
+\doxysubsubsection{\texorpdfstring{handleEvent()}{handleEvent()}}
+{\footnotesize\ttfamily virtual bool Pause\+State\+::handle\+Event (\begin{DoxyParamCaption}\item[{const sf\+::\+Event \&}]{event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Handles all events for this state. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em event} & Events stored in the window. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+If false, this is information to stop to handle events on the lower layers of the stack. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_application___state_a714e3a740cb2c9e70705c402a60bcff6}{Application\+\_\+\+State}}.
+
+\mbox{\Hypertarget{class_pause_state_a534fe408bf762e3d0f9b4cc6d4cb4cec}\label{class_pause_state_a534fe408bf762e3d0f9b4cc6d4cb4cec}} 
+\index{PauseState@{PauseState}!update@{update}}
+\index{update@{update}!PauseState@{PauseState}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily virtual bool Pause\+State\+::update (\begin{DoxyParamCaption}\item[{sf\+::\+Time}]{dt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Updates the status of this state (informations in it) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dt} & The time elapsed between the previous and the new frame. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+If false, this is information to stop the update on the lower layers of the stack. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_application___state_a5478f7c19e06db5ccd3fa309e6a9b950}{Application\+\_\+\+State}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Flappy Bird/\+States/\+Game States/Pause\+State.\+h\end{DoxyCompactItemize}

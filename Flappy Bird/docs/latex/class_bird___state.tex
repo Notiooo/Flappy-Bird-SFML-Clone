@@ -1,0 +1,188 @@
+\hypertarget{class_bird___state}{}\doxysection{Bird\+\_\+\+State Class Reference}
+\label{class_bird___state}\index{Bird\_State@{Bird\_State}}
+
+
+State of bird behaviour.  
+
+
+
+
+{\ttfamily \#include $<$Bird\+\_\+\+State.\+h$>$}
+
+
+
+Inheritance diagram for Bird\+\_\+\+State\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_bird___state__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Bird\+\_\+\+State\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_bird___state__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_bird___state_1_1_game___data}{Game\+\_\+\+Data}}
+\begin{DoxyCompactList}\small\item\em Informations we want to send through states of the stack This struct is used to generate the \mbox{\hyperlink{class_state_stack}{State\+Stack}} template function. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{class_bird___state}{Bird\+\_\+\+State}} $>$ \mbox{\hyperlink{class_bird___state_ac4cd0fd22926483b35703dc54f098f50}{Pointer}}
+\begin{DoxyCompactList}\small\item\em Type we should use in context of States. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_bird___state_ab619814224a01e714e7719d3e590e1d6}{Bird\+\_\+\+State}} (\mbox{\hyperlink{class_state_stack}{State\+Stack}}$<$ \mbox{\hyperlink{class_bird___state}{Bird\+\_\+\+State}} $>$ \&\mbox{\hyperlink{class_general___state_abea7b3b62db4591b47ec4a48f1ab8a32}{stack}}, \mbox{\hyperlink{struct_bird___state_1_1_game___data}{Game\+\_\+\+Data}} game\+\_\+data)
+\begin{DoxyCompactList}\small\item\em Initializes variables and loads the textures needed in this stack. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_bird___state_a28607b740b57dd02429bfefb01bf3310}\label{class_bird___state_a28607b740b57dd02429bfefb01bf3310}} 
+virtual \mbox{\hyperlink{class_bird___state_a28607b740b57dd02429bfefb01bf3310}{$\sim$\+Bird\+\_\+\+State}} ()
+\begin{DoxyCompactList}\small\item\em Declared for the purpose of correct implementation of the inheritance. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{class_bird___state_a5f893677838712fb1d5bea7aa8c23968}{update}} (sf\+::\+Time dt)=0
+\begin{DoxyCompactList}\small\item\em Updates the status of this state. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_bird___state_a456b6ef1b1819643afedf9c64a9015fd}\label{class_bird___state_a456b6ef1b1819643afedf9c64a9015fd}} 
+virtual void \mbox{\hyperlink{class_bird___state_a456b6ef1b1819643afedf9c64a9015fd}{draw}} ()=0
+\begin{DoxyCompactList}\small\item\em Draws this state. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{class_bird___state_aeae81e2dee142632ff23e8fdb878f5f4}{handle\+Event}} (const sf\+::\+Event \&event)=0
+\begin{DoxyCompactList}\small\item\em Handles all events for this state. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_bird___state_ae9b20e20c5b6aa7acdf45629c3ef59f4}\label{class_bird___state_ae9b20e20c5b6aa7acdf45629c3ef59f4}} 
+void \mbox{\hyperlink{class_bird___state_ae9b20e20c5b6aa7acdf45629c3ef59f4}{load\+Textures}} ()
+\begin{DoxyCompactList}\small\item\em Loads the textures used inside this state of the stack. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_bird___state_1_1_game___data}{Game\+\_\+\+Data}} \mbox{\hyperlink{class_bird___state_ac0c8cb149c19598960c7f6bbd5bcb58d}{get\+Game\+Data}} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_bird___state_af6d731e45d12f8a5e0708c8931617119}\label{class_bird___state_af6d731e45d12f8a5e0708c8931617119}} 
+\mbox{\hyperlink{class_resource_manager}{Texture\+Manager}} \mbox{\hyperlink{class_bird___state_af6d731e45d12f8a5e0708c8931617119}{textures}}
+\begin{DoxyCompactList}\small\item\em The manager that holds the textures. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_bird___state_a045612e7f908c7c9f4e780894923079f}\label{class_bird___state_a045612e7f908c7c9f4e780894923079f}} 
+sf\+::\+Render\+Window \& \mbox{\hyperlink{class_bird___state_a045612e7f908c7c9f4e780894923079f}{window}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_window}{Window}} to which we render the image / display the game. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_bird___state_a99bd12439a34acbaf1b4fb7c7eaac451}\label{class_bird___state_a99bd12439a34acbaf1b4fb7c7eaac451}} 
+sf\+::\+View \mbox{\hyperlink{class_bird___state_a99bd12439a34acbaf1b4fb7c7eaac451}{camera}}
+\begin{DoxyCompactList}\small\item\em The camera we look through at the game. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+State of bird behaviour. 
+
+This state allows to control behaviour of a specific in-\/game object. Fully developed to break down the bird\textquotesingle{}s behaviour into individual parts. In-\/game bird has a specific flow, for example\+: 1) It starts with Flying State waiting for user input 2) As it gets input it switches to Flapping State that applies gravity and allows player to \char`\"{}flap\char`\"{} the bird with another click. 3) It can now go to Hit State -- when it hit a pipe, or go to Ground State -- when it hits ground. Both states take away the player\textquotesingle{}s ability to control the bird. The state of impact additionally forces the bird to fall down and go to Ground State. 4) Ground State displays game over, and after a while switches to \mbox{\hyperlink{class_score}{Score}} State 5) In \mbox{\hyperlink{class_score}{Score}} State it displays the score, and wait for player input so it can restart the game.
+
+\begin{DoxyWarning}{Warning}
+It is created inside \mbox{\hyperlink{class_game_state}{Game\+State}}, so actually the main \mbox{\hyperlink{class_state_stack}{State\+Stack}} created in window class still controls the whole application with this stack itself. It means if there is \mbox{\hyperlink{class_application___state}{Application\+\_\+\+State}} pushed onto the stack it has the priority. 
+\end{DoxyWarning}
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{class_bird___state_ac4cd0fd22926483b35703dc54f098f50}\label{class_bird___state_ac4cd0fd22926483b35703dc54f098f50}} 
+\index{Bird\_State@{Bird\_State}!Pointer@{Pointer}}
+\index{Pointer@{Pointer}!Bird\_State@{Bird\_State}}
+\doxysubsubsection{\texorpdfstring{Pointer}{Pointer}}
+{\footnotesize\ttfamily typedef std\+::unique\+\_\+ptr$<$\mbox{\hyperlink{class_bird___state}{Bird\+\_\+\+State}}$>$ \mbox{\hyperlink{class_bird___state_ac4cd0fd22926483b35703dc54f098f50}{Bird\+\_\+\+State\+::\+Pointer}}}
+
+
+
+Type we should use in context of States. 
+
+This is essential for an inheritance from the \mbox{\hyperlink{class_general___state}{General\+\_\+\+State}} class. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_bird___state_ab619814224a01e714e7719d3e590e1d6}\label{class_bird___state_ab619814224a01e714e7719d3e590e1d6}} 
+\index{Bird\_State@{Bird\_State}!Bird\_State@{Bird\_State}}
+\index{Bird\_State@{Bird\_State}!Bird\_State@{Bird\_State}}
+\doxysubsubsection{\texorpdfstring{Bird\_State()}{Bird\_State()}}
+{\footnotesize\ttfamily Bird\+\_\+\+State\+::\+Bird\+\_\+\+State (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_state_stack}{State\+Stack}}$<$ \mbox{\hyperlink{class_bird___state}{Bird\+\_\+\+State}} $>$ \&}]{stack,  }\item[{\mbox{\hyperlink{struct_bird___state_1_1_game___data}{Game\+\_\+\+Data}}}]{game\+\_\+data }\end{DoxyParamCaption})}
+
+
+
+Initializes variables and loads the textures needed in this stack. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em stack} & The state stack to which this state belongs. \\
+\hline
+{\em game\+\_\+data} & Data to be transmitted to the states \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_bird___state_ac0c8cb149c19598960c7f6bbd5bcb58d}\label{class_bird___state_ac0c8cb149c19598960c7f6bbd5bcb58d}} 
+\index{Bird\_State@{Bird\_State}!getGameData@{getGameData}}
+\index{getGameData@{getGameData}!Bird\_State@{Bird\_State}}
+\doxysubsubsection{\texorpdfstring{getGameData()}{getGameData()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_bird___state_1_1_game___data}{Game\+\_\+\+Data}} Bird\+\_\+\+State\+::get\+Game\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyReturn}{Returns}
+Informations that those states store for all states 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_bird___state_aeae81e2dee142632ff23e8fdb878f5f4}\label{class_bird___state_aeae81e2dee142632ff23e8fdb878f5f4}} 
+\index{Bird\_State@{Bird\_State}!handleEvent@{handleEvent}}
+\index{handleEvent@{handleEvent}!Bird\_State@{Bird\_State}}
+\doxysubsubsection{\texorpdfstring{handleEvent()}{handleEvent()}}
+{\footnotesize\ttfamily virtual bool Bird\+\_\+\+State\+::handle\+Event (\begin{DoxyParamCaption}\item[{const sf\+::\+Event \&}]{event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Handles all events for this state. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em event} & Events stored in the window. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+If false, this is information to stop to handle events on the lower layers of the stack. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_general___state_ac4dd66d0d4b47d0902678d7de6c277c2}{General\+\_\+\+State$<$ Bird\+\_\+\+State $>$}}.
+
+
+
+Implemented in \mbox{\hyperlink{class_flapping_state_ab3245ddf67b37f47c0d0aa24d63d4773}{Flapping\+State}}, \mbox{\hyperlink{class_score_state_a139a69227498df1e8b1d6a554b06d92c}{Score\+State}}, \mbox{\hyperlink{class_flying_state_a8e7f0c8f4a8b8751af487059ffadf4e1}{Flying\+State}}, \mbox{\hyperlink{class_ground_state_ae5c339ff4d2660a239064564523f86c7}{Ground\+State}}, and \mbox{\hyperlink{class_hit_state_a3229df6698c03eac94e768845301d72d}{Hit\+State}}.
+
+\mbox{\Hypertarget{class_bird___state_a5f893677838712fb1d5bea7aa8c23968}\label{class_bird___state_a5f893677838712fb1d5bea7aa8c23968}} 
+\index{Bird\_State@{Bird\_State}!update@{update}}
+\index{update@{update}!Bird\_State@{Bird\_State}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily virtual bool Bird\+\_\+\+State\+::update (\begin{DoxyParamCaption}\item[{sf\+::\+Time}]{dt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Updates the status of this state. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dt} & The time elapsed between the previous and the new frame. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+If false, this is information to stop the update on the lower layers of the stack. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_general___state_a4e6d92d3b00a069c792de61b9d54e0f9}{General\+\_\+\+State$<$ Bird\+\_\+\+State $>$}}.
+
+
+
+Implemented in \mbox{\hyperlink{class_flapping_state_a6c8b422fa79a16e394891219c21935e6}{Flapping\+State}}, \mbox{\hyperlink{class_score_state_aa976357fe35a96d68ec00027d31de97b}{Score\+State}}, \mbox{\hyperlink{class_flying_state_aebc9679bf0ae1becd00983009f9e0fc1}{Flying\+State}}, \mbox{\hyperlink{class_ground_state_a5b41de109abe03d29765fa6fe3c0a608}{Ground\+State}}, and \mbox{\hyperlink{class_hit_state_a07e96dac11910bd0e66e47c588db399a}{Hit\+State}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Flappy Bird/\+States/Bird\+\_\+\+State.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,140 @@
+\hypertarget{class_node_entity}{}\doxysection{Node\+Entity Class Reference}
+\label{class_node_entity}\index{NodeEntity@{NodeEntity}}
+
+
+The kind of scene that contains movement A specific type of scene that contains physical elements such as acceleration, speed.  
+
+
+
+
+{\ttfamily \#include $<$Node\+Entity.\+h$>$}
+
+
+
+Inheritance diagram for Node\+Entity\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_node_entity__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Node\+Entity\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_node_entity__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_node_entity_ac3ed6bcf305ea81c53a638b3ef4786c0}{set\+Velocity}} (sf\+::\+Vector2f vel)
+\begin{DoxyCompactList}\small\item\em Set velocity of this object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_node_entity_a0b76d9528fa31a6c6b6e426445529f12}{set\+Velocity}} (float vx, float vy)
+\begin{DoxyCompactList}\small\item\em Set velocity of this object. \end{DoxyCompactList}\item 
+sf\+::\+Vector2f \mbox{\hyperlink{class_node_entity_a99346efc5cee992deac198c6cca329bf}{get\+Velocity}} () const
+\item 
+\mbox{\hyperlink{class_node_entity}{Node\+Entity}} \& \mbox{\hyperlink{class_node_entity_a7a1d70ea923b034f2dec3b6bafbb9112}{operator+=}} (sf\+::\+Vector2f velocity)
+\begin{DoxyCompactList}\small\item\em Adds velocity to current velocity. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_node_entity}{Node\+Entity}} \& \mbox{\hyperlink{class_node_entity_aace4b05b9628ca5c57e7aaa7fe9c6300}{operator-\/=}} (sf\+::\+Vector2f velocity)
+\begin{DoxyCompactList}\small\item\em Decrease velocity to current velocity. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_node_entity_af99f5a3a9387506c874eafbdf9e72fab}{accelerate}} (sf\+::\+Vector2f velocity)
+\begin{DoxyCompactList}\small\item\em Adds velocity to current velocity. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+The kind of scene that contains movement A specific type of scene that contains physical elements such as acceleration, speed. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_node_entity_af99f5a3a9387506c874eafbdf9e72fab}\label{class_node_entity_af99f5a3a9387506c874eafbdf9e72fab}} 
+\index{NodeEntity@{NodeEntity}!accelerate@{accelerate}}
+\index{accelerate@{accelerate}!NodeEntity@{NodeEntity}}
+\doxysubsubsection{\texorpdfstring{accelerate()}{accelerate()}}
+{\footnotesize\ttfamily void Node\+Entity\+::accelerate (\begin{DoxyParamCaption}\item[{sf\+::\+Vector2f}]{velocity }\end{DoxyParamCaption})}
+
+
+
+Adds velocity to current velocity. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em velocity} & Velocity we want to add to this object \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_node_entity_a99346efc5cee992deac198c6cca329bf}\label{class_node_entity_a99346efc5cee992deac198c6cca329bf}} 
+\index{NodeEntity@{NodeEntity}!getVelocity@{getVelocity}}
+\index{getVelocity@{getVelocity}!NodeEntity@{NodeEntity}}
+\doxysubsubsection{\texorpdfstring{getVelocity()}{getVelocity()}}
+{\footnotesize\ttfamily sf\+::\+Vector2f Node\+Entity\+::get\+Velocity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\begin{DoxyReturn}{Returns}
+Velocity of this object 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_node_entity_a7a1d70ea923b034f2dec3b6bafbb9112}\label{class_node_entity_a7a1d70ea923b034f2dec3b6bafbb9112}} 
+\index{NodeEntity@{NodeEntity}!operator+=@{operator+=}}
+\index{operator+=@{operator+=}!NodeEntity@{NodeEntity}}
+\doxysubsubsection{\texorpdfstring{operator+=()}{operator+=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_node_entity}{Node\+Entity}}\& Node\+Entity\+::operator+= (\begin{DoxyParamCaption}\item[{sf\+::\+Vector2f}]{velocity }\end{DoxyParamCaption})}
+
+
+
+Adds velocity to current velocity. 
+
+\begin{DoxyReturn}{Returns}
+itself 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_node_entity_aace4b05b9628ca5c57e7aaa7fe9c6300}\label{class_node_entity_aace4b05b9628ca5c57e7aaa7fe9c6300}} 
+\index{NodeEntity@{NodeEntity}!operator-\/=@{operator-\/=}}
+\index{operator-\/=@{operator-\/=}!NodeEntity@{NodeEntity}}
+\doxysubsubsection{\texorpdfstring{operator-\/=()}{operator-=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_node_entity}{Node\+Entity}}\& Node\+Entity\+::operator-\/= (\begin{DoxyParamCaption}\item[{sf\+::\+Vector2f}]{velocity }\end{DoxyParamCaption})}
+
+
+
+Decrease velocity to current velocity. 
+
+\begin{DoxyReturn}{Returns}
+itself 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_node_entity_a0b76d9528fa31a6c6b6e426445529f12}\label{class_node_entity_a0b76d9528fa31a6c6b6e426445529f12}} 
+\index{NodeEntity@{NodeEntity}!setVelocity@{setVelocity}}
+\index{setVelocity@{setVelocity}!NodeEntity@{NodeEntity}}
+\doxysubsubsection{\texorpdfstring{setVelocity()}{setVelocity()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Node\+Entity\+::set\+Velocity (\begin{DoxyParamCaption}\item[{float}]{vx,  }\item[{float}]{vy }\end{DoxyParamCaption})}
+
+
+
+Set velocity of this object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vx} & Velocity on the x-\/axis \\
+\hline
+{\em vy} & Velocity on the y-\/axis \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_node_entity_ac3ed6bcf305ea81c53a638b3ef4786c0}\label{class_node_entity_ac3ed6bcf305ea81c53a638b3ef4786c0}} 
+\index{NodeEntity@{NodeEntity}!setVelocity@{setVelocity}}
+\index{setVelocity@{setVelocity}!NodeEntity@{NodeEntity}}
+\doxysubsubsection{\texorpdfstring{setVelocity()}{setVelocity()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Node\+Entity\+::set\+Velocity (\begin{DoxyParamCaption}\item[{sf\+::\+Vector2f}]{vel }\end{DoxyParamCaption})}
+
+
+
+Set velocity of this object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vel} & Vector with velocity applied to this object \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Flappy Bird/\+Nodes/Node\+Entity.\+h\end{DoxyCompactItemize}

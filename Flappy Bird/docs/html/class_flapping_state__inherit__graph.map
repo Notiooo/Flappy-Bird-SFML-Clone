@@ -1,0 +1,5 @@
+<map id="FlappingState" name="FlappingState">
+<area shape="rect" id="node1" title="The state of play when the player controls the bird." alt="" coords="24,169,127,196"/>
+<area shape="rect" id="node2" href="$class_bird___state.html" title="State of bird behaviour." alt="" coords="34,95,117,121"/>
+<area shape="rect" id="node3" href="$class_general___state.html" title=" " alt="" coords="5,5,145,47"/>
+</map>

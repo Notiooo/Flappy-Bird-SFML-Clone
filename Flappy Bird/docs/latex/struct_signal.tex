@@ -1,0 +1,46 @@
+\hypertarget{struct_signal}{}\doxysection{Signal Struct Reference}
+\label{struct_signal}\index{Signal@{Signal}}
+
+
+Signals are a special function, which is implicitly performed on elements of a given scene.  
+
+
+
+
+{\ttfamily \#include $<$Signal.\+h$>$}
+
+
+
+Collaboration diagram for Signal\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=284pt]{struct_signal__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct_signal_a7e69e538253d90c3f551f4701a1f94a5}\label{struct_signal_a7e69e538253d90c3f551f4701a1f94a5}} 
+\mbox{\hyperlink{struct_signal_a7e69e538253d90c3f551f4701a1f94a5}{Signal}} ()
+\begin{DoxyCompactList}\small\item\em Initializes the variables. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct_signal_a662d6480cf3d2dbd2ba2bc9989a653e8}\label{struct_signal_a662d6480cf3d2dbd2ba2bc9989a653e8}} 
+std\+::function$<$ void(\mbox{\hyperlink{class_node_scene}{Node\+Scene}} \&, sf\+::\+Time)$>$ \mbox{\hyperlink{struct_signal_a662d6480cf3d2dbd2ba2bc9989a653e8}{emit}}
+\begin{DoxyCompactList}\small\item\em It specifies what kind of work should the targeted node do. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_signal_a9f9b31ca8db3e4f116258664dd63bbf8}\label{struct_signal_a9f9b31ca8db3e4f116258664dd63bbf8}} 
+Signals\+::\+Category \mbox{\hyperlink{struct_signal_a9f9b31ca8db3e4f116258664dd63bbf8}{category\+\_\+id}}
+\begin{DoxyCompactList}\small\item\em Category of the signal. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Signals are a special function, which is implicitly performed on elements of a given scene. 
+
+This works in such a way that it starts with \textquotesingle{}root\+\_\+scene\textquotesingle{}, which interprets whether or not a given signal is intended to continue by using prepared for this category. If it is intended for it, it performs on itself the function contained in the signal and regardless of whether the signal was intended for it or not, it passes it on for all scenes pinned to it. They do the same. 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Flappy Bird/\+Signals/Signal.\+h\end{DoxyCompactItemize}

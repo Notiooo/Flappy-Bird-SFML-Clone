@@ -1,0 +1,5 @@
+<map id="Application_State::Game_Data" name="Application_State::Game_Data">
+<area shape="rect" id="node1" title="Informations we want to send through states of the stack This struct is used to generate the StateSta..." alt="" coords="89,124,221,165"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,13,124,39"/>
+<area shape="rect" id="node3" href="$class_resource_manager.html" title="This class allows us to hold some textures in it, and get them back later." alt="" coords="149,5,343,47"/>
+</map>

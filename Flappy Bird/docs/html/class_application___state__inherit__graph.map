@@ -1,0 +1,7 @@
+<map id="Application_State" name="Application_State">
+<area shape="rect" id="node1" title="Application that controls flow of the game." alt="" coords="101,95,225,121"/>
+<area shape="rect" id="node3" href="$class_game_state.html" title="A state where the actual game starts." alt="" coords="5,169,93,196"/>
+<area shape="rect" id="node4" href="$class_pause_state.html" title="A state that allows the player to stop the game and then resume it again or leave the game." alt="" coords="117,169,208,196"/>
+<area shape="rect" id="node5" href="$class_title_state.html" title="A state displaying animated image of the creator." alt="" coords="232,169,309,196"/>
+<area shape="rect" id="node2" href="$class_general___state.html" title=" " alt="" coords="72,5,253,47"/>
+</map>

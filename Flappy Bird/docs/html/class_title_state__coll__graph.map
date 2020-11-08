@@ -1,0 +1,6 @@
+<map id="TitleState" name="TitleState">
+<area shape="rect" id="node1" title="A state displaying animated image of the creator." alt="" coords="57,276,135,303"/>
+<area shape="rect" id="node2" href="$class_application___state.html" title="Application that controls flow of the game." alt="" coords="34,200,158,227"/>
+<area shape="rect" id="node3" href="$class_general___state.html" title=" " alt="" coords="5,109,187,151"/>
+<area shape="rect" id="node4" href="$class_state_stack.html" title=" " alt="" coords="15,5,177,47"/>
+</map>

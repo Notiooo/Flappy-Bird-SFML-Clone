@@ -1,0 +1,61 @@
+\hypertarget{class_window}{}\doxysection{Window Class Reference}
+\label{class_window}\index{Window@{Window}}
+
+
+This file is everything that is related to the window application -\/ for example handle exit buttons, resizing the window etc.  
+
+
+
+
+{\ttfamily \#include $<$Window.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_window_a74e6087da23d3c24e9fac0245e5ec92c}{Window}} ()
+\begin{DoxyCompactList}\small\item\em It prepares the window for proper operation. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_window_a245d821e6016fa1f6970ccbbedd635f6}\label{class_window_a245d821e6016fa1f6970ccbbedd635f6}} 
+\mbox{\hyperlink{class_window_a245d821e6016fa1f6970ccbbedd635f6}{$\sim$\+Window}} ()
+\begin{DoxyCompactList}\small\item\em Properly closes the log file. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_window_ae137ec42ddc87d666d49661484410091}{run}} ()
+\begin{DoxyCompactList}\small\item\em It launches the main processes of the game, which last for the entire duration of the game. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This file is everything that is related to the window application -\/ for example handle exit buttons, resizing the window etc. 
+
+A window where the game should be displayed.
+
+The window deals with displaying the game. It does not manage anything related to the game gameplay itself, and its maximum interference with the game itself is displaying the \mbox{\hyperlink{class_state_stack}{State\+Stack}}, and loading states used in the \mbox{\hyperlink{class_state_stack}{State\+Stack}}.
+
+It also holds Manager for Texture and Fonts -- so they can be used anywhere inside the window. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_window_a74e6087da23d3c24e9fac0245e5ec92c}\label{class_window_a74e6087da23d3c24e9fac0245e5ec92c}} 
+\index{Window@{Window}!Window@{Window}}
+\index{Window@{Window}!Window@{Window}}
+\doxysubsubsection{\texorpdfstring{Window()}{Window()}}
+{\footnotesize\ttfamily Window\+::\+Window (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+It prepares the window for proper operation. 
+
+In its current form, it creates a window with a resolution of 432 x 768 and sets the window positions to the top left of the screen. It also loads the states to the state and sets the window icon. It applies a lock of 60 frames per second. Initializes most variables. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_window_ae137ec42ddc87d666d49661484410091}\label{class_window_ae137ec42ddc87d666d49661484410091}} 
+\index{Window@{Window}!run@{run}}
+\index{run@{run}!Window@{Window}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily void Window\+::run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+It launches the main processes of the game, which last for the entire duration of the game. 
+
+It calls functions that process inputs and update the game state. Calculates the correct time between frames and generates game status updates no faster than 60 times per second. It also controls the state of the game and closes the window when the game is finished. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Flappy Bird/Window.\+h\end{DoxyCompactItemize}

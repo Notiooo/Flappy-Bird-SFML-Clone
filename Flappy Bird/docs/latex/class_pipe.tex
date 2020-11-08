@@ -1,0 +1,144 @@
+\hypertarget{class_pipe}{}\doxysection{Pipe Class Reference}
+\label{class_pipe}\index{Pipe@{Pipe}}
+
+
+A pipe is an object that can move.  
+
+
+
+
+{\ttfamily \#include $<$Pipe.\+h$>$}
+
+
+
+Inheritance diagram for Pipe\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_pipe__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Pipe\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_pipe__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_pipe_abc83e89a370d3fb73097f78588716e50}\label{class_pipe_abc83e89a370d3fb73097f78588716e50}} 
+enum \mbox{\hyperlink{class_pipe_abc83e89a370d3fb73097f78588716e50}{Type}} \{ {\bfseries Green}, 
+{\bfseries Red}
+ \}
+\begin{DoxyCompactList}\small\item\em Different types of pipes were planned in the game, but have not yet been implemented. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_pipe_a1bbced1878c030bf16b241697f1a4259}{Pipe}} (const \mbox{\hyperlink{class_resource_manager}{Texture\+Manager}} \&textures, \mbox{\hyperlink{class_pipe_abc83e89a370d3fb73097f78588716e50}{Type}} type=Type\+::\+Green)
+\begin{DoxyCompactList}\small\item\em Standardly initializes the pipe. \end{DoxyCompactList}\item 
+virtual unsigned int \mbox{\hyperlink{class_pipe_aa64c47b4a68afd6f7ac7c53f4a0f5059}{get\+Category}} () const
+\begin{DoxyCompactList}\small\item\em Returns a category of this specific node used for signals and colisions. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_pipe_ab00719229317560b3d88dc0fe2406f37}{draw\+This\+Node}} (sf\+::\+Render\+Target \&target, sf\+::\+Render\+States states) const
+\begin{DoxyCompactList}\small\item\em Function that prints only elements related to this node. \end{DoxyCompactList}\item 
+sf\+::\+Float\+Rect \mbox{\hyperlink{class_pipe_a07a1d660cf3ba7a39380225de0d75203}{get\+Bounding\+Rect}} () const
+\begin{DoxyCompactList}\small\item\em Give the Rect of the object -- a certain box surrounding this object in size. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_pipe_af4d1b01650513e7860c3a7bbe56c7782}\label{class_pipe_af4d1b01650513e7860c3a7bbe56c7782}} 
+class {\bfseries Typical\+Pipe}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A pipe is an object that can move. 
+
+It has a category for which a collision is displayed. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_pipe_a1bbced1878c030bf16b241697f1a4259}\label{class_pipe_a1bbced1878c030bf16b241697f1a4259}} 
+\index{Pipe@{Pipe}!Pipe@{Pipe}}
+\index{Pipe@{Pipe}!Pipe@{Pipe}}
+\doxysubsubsection{\texorpdfstring{Pipe()}{Pipe()}}
+{\footnotesize\ttfamily Pipe\+::\+Pipe (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_resource_manager}{Texture\+Manager}} \&}]{textures,  }\item[{\mbox{\hyperlink{class_pipe_abc83e89a370d3fb73097f78588716e50}{Type}}}]{type = {\ttfamily Type\+:\+:Green} }\end{DoxyParamCaption})}
+
+
+
+Standardly initializes the pipe. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em textures} & The Texture Manager that holds the textures \\
+\hline
+{\em type} & Type of the pipe \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_pipe_ab00719229317560b3d88dc0fe2406f37}\label{class_pipe_ab00719229317560b3d88dc0fe2406f37}} 
+\index{Pipe@{Pipe}!drawThisNode@{drawThisNode}}
+\index{drawThisNode@{drawThisNode}!Pipe@{Pipe}}
+\doxysubsubsection{\texorpdfstring{drawThisNode()}{drawThisNode()}}
+{\footnotesize\ttfamily virtual void Pipe\+::draw\+This\+Node (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Target \&}]{target,  }\item[{sf\+::\+Render\+States}]{states }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Function that prints only elements related to this node. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em target} & Canvas on which we draw all objects \\
+\hline
+{\em states} & Any transformations and additional effects (in our case, transformations relative to the scene) \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_node_scene}{Node\+Scene}}.
+
+\mbox{\Hypertarget{class_pipe_a07a1d660cf3ba7a39380225de0d75203}\label{class_pipe_a07a1d660cf3ba7a39380225de0d75203}} 
+\index{Pipe@{Pipe}!getBoundingRect@{getBoundingRect}}
+\index{getBoundingRect@{getBoundingRect}!Pipe@{Pipe}}
+\doxysubsubsection{\texorpdfstring{getBoundingRect()}{getBoundingRect()}}
+{\footnotesize\ttfamily sf\+::\+Float\+Rect Pipe\+::get\+Bounding\+Rect (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Give the Rect of the object -- a certain box surrounding this object in size. 
+
+\begin{DoxyReturn}{Returns}
+The Rect of this object 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_node_scene_aa511677543749633db4be90ef88b937e}{Node\+Scene}}.
+
+\mbox{\Hypertarget{class_pipe_aa64c47b4a68afd6f7ac7c53f4a0f5059}\label{class_pipe_aa64c47b4a68afd6f7ac7c53f4a0f5059}} 
+\index{Pipe@{Pipe}!getCategory@{getCategory}}
+\index{getCategory@{getCategory}!Pipe@{Pipe}}
+\doxysubsubsection{\texorpdfstring{getCategory()}{getCategory()}}
+{\footnotesize\ttfamily virtual unsigned int Pipe\+::get\+Category (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Returns a category of this specific node used for signals and colisions. 
+
+\begin{DoxyReturn}{Returns}
+Category of this object 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_node_scene}{Node\+Scene}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Flappy Bird/\+Nodes/\+Specified Nodes/Pipe.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,123 @@
+\hypertarget{class_score_state}{}\doxysection{Score\+State Class Reference}
+\label{class_score_state}\index{ScoreState@{ScoreState}}
+
+
+In this state, the score that the player has achieved is displayed.  
+
+
+
+
+{\ttfamily \#include $<$Score\+State.\+h$>$}
+
+
+
+Inheritance diagram for Score\+State\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=185pt]{class_score_state__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Score\+State\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_score_state__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_score_state_a9ae7aaa8755549a29add50019568e27b}{Score\+State}} (\mbox{\hyperlink{class_state_stack}{State\+Stack}}$<$ \mbox{\hyperlink{class_bird___state}{Bird\+\_\+\+State}} $>$ \&statestack, \mbox{\hyperlink{struct_bird___state_1_1_game___data}{Game\+\_\+\+Data}} gamedata)
+\begin{DoxyCompactList}\small\item\em Initializes variables and prepares the player\textquotesingle{}s score. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_score_state_a437d411aa4051638fa3cacb6e65115da}\label{class_score_state_a437d411aa4051638fa3cacb6e65115da}} 
+virtual void \mbox{\hyperlink{class_score_state_a437d411aa4051638fa3cacb6e65115da}{draw}} ()
+\begin{DoxyCompactList}\small\item\em Draws this state. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{class_score_state_aa976357fe35a96d68ec00027d31de97b}{update}} (sf\+::\+Time dt)
+\begin{DoxyCompactList}\small\item\em Updates the status of this state (informations in it) \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{class_score_state_a139a69227498df1e8b1d6a554b06d92c}{handle\+Event}} (const sf\+::\+Event \&event)
+\begin{DoxyCompactList}\small\item\em Handles all events for this state. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+In this state, the score that the player has achieved is displayed. 
+
+It is also given the opportunity to play the game again by clicking any button. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_score_state_a9ae7aaa8755549a29add50019568e27b}\label{class_score_state_a9ae7aaa8755549a29add50019568e27b}} 
+\index{ScoreState@{ScoreState}!ScoreState@{ScoreState}}
+\index{ScoreState@{ScoreState}!ScoreState@{ScoreState}}
+\doxysubsubsection{\texorpdfstring{ScoreState()}{ScoreState()}}
+{\footnotesize\ttfamily Score\+State\+::\+Score\+State (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_state_stack}{State\+Stack}}$<$ \mbox{\hyperlink{class_bird___state}{Bird\+\_\+\+State}} $>$ \&}]{statestack,  }\item[{\mbox{\hyperlink{struct_bird___state_1_1_game___data}{Game\+\_\+\+Data}}}]{gamedata }\end{DoxyParamCaption})}
+
+
+
+Initializes variables and prepares the player\textquotesingle{}s score. 
+
+It chooses after the player\textquotesingle{}s score which medal should be displayed to him. It composes the whole scene with the result that the player has got.
+
+
+\begin{DoxyParams}{Parameters}
+{\em statestack} & The state stack to which this state belongs. \\
+\hline
+{\em gamedata} & Data to be transmitted to the states \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_score_state_a139a69227498df1e8b1d6a554b06d92c}\label{class_score_state_a139a69227498df1e8b1d6a554b06d92c}} 
+\index{ScoreState@{ScoreState}!handleEvent@{handleEvent}}
+\index{handleEvent@{handleEvent}!ScoreState@{ScoreState}}
+\doxysubsubsection{\texorpdfstring{handleEvent()}{handleEvent()}}
+{\footnotesize\ttfamily virtual bool Score\+State\+::handle\+Event (\begin{DoxyParamCaption}\item[{const sf\+::\+Event \&}]{event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Handles all events for this state. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em event} & Events stored in the window. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+If false, this is information to stop to handle events on the lower layers of the stack. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_bird___state_aeae81e2dee142632ff23e8fdb878f5f4}{Bird\+\_\+\+State}}.
+
+\mbox{\Hypertarget{class_score_state_aa976357fe35a96d68ec00027d31de97b}\label{class_score_state_aa976357fe35a96d68ec00027d31de97b}} 
+\index{ScoreState@{ScoreState}!update@{update}}
+\index{update@{update}!ScoreState@{ScoreState}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily virtual bool Score\+State\+::update (\begin{DoxyParamCaption}\item[{sf\+::\+Time}]{dt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Updates the status of this state (informations in it) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dt} & The time elapsed between the previous and the new frame. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+If false, this is information to stop the update on the lower layers of the stack. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_bird___state_a5f893677838712fb1d5bea7aa8c23968}{Bird\+\_\+\+State}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Flappy Bird/\+States/\+Bird States/Score\+State.\+h\end{DoxyCompactItemize}

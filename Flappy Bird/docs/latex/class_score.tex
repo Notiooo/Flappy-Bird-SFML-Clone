@@ -1,0 +1,122 @@
+\hypertarget{class_score}{}\doxysection{Score Class Reference}
+\label{class_score}\index{Score@{Score}}
+
+
+Text that displays the player\textquotesingle{}s current score.  
+
+
+
+
+{\ttfamily \#include $<$Score.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_score_ab5d47cc8b78c355fd655f2a38675377b}{Score}} (\mbox{\hyperlink{class_resource_manager}{Font\+Manager}} \&fonts, \mbox{\hyperlink{namespace_resources_aa7a52b849042ba4535d611a93256e1e5}{Resources\+::\+Fonts}} the\+\_\+font=Resources\+::\+Fonts\+::\+Flappy\+\_\+\+Font)
+\begin{DoxyCompactList}\small\item\em Sets the basic values that the text displaying the score should have. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_score_a95357b1b751b2efa5a08bf7960c57484}{set\+\_\+score}} (int score)
+\begin{DoxyCompactList}\small\item\em Sets the score that this object displays. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_score_abf23d27241f164727a98f21370f45a54}{set\+Position}} (sf\+::\+Vector2f pos)
+\begin{DoxyCompactList}\small\item\em Changes the position of this object displaying the score. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_score_a4e4679fb8a31de31c9604ab63bead3cf}{set\+Position}} (float pos\+\_\+x, float pos\+\_\+y)
+\begin{DoxyCompactList}\small\item\em Changes the position of this object displaying the score. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_score_a3f55f24e225da1b460bee80f611d0d5c}{draw}} (sf\+::\+Render\+Window \&window) const
+\begin{DoxyCompactList}\small\item\em Function that draws this object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_score_a1a476a2a2bc3a65a050e512fad500d02}\label{class_score_a1a476a2a2bc3a65a050e512fad500d02}} 
+void \mbox{\hyperlink{class_score_a1a476a2a2bc3a65a050e512fad500d02}{update}} ()
+\begin{DoxyCompactList}\small\item\em Updates the status of this object (informations in it) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Text that displays the player\textquotesingle{}s current score. 
+
+It is displayed in the middle of the screen and continuously updates the pipes that have been passed. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_score_ab5d47cc8b78c355fd655f2a38675377b}\label{class_score_ab5d47cc8b78c355fd655f2a38675377b}} 
+\index{Score@{Score}!Score@{Score}}
+\index{Score@{Score}!Score@{Score}}
+\doxysubsubsection{\texorpdfstring{Score()}{Score()}}
+{\footnotesize\ttfamily Score\+::\+Score (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_resource_manager}{Font\+Manager}} \&}]{fonts,  }\item[{\mbox{\hyperlink{namespace_resources_aa7a52b849042ba4535d611a93256e1e5}{Resources\+::\+Fonts}}}]{the\+\_\+font = {\ttfamily Resources\+:\+:Fonts\+:\+:Flappy\+\_\+Font} }\end{DoxyParamCaption})}
+
+
+
+Sets the basic values that the text displaying the score should have. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em fonts} & Font Manager that holds the fonts \\
+\hline
+{\em the\+\_\+font} & The font that we want to use to display the score \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_score_a3f55f24e225da1b460bee80f611d0d5c}\label{class_score_a3f55f24e225da1b460bee80f611d0d5c}} 
+\index{Score@{Score}!draw@{draw}}
+\index{draw@{draw}!Score@{Score}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Score\+::draw (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Window \&}]{window }\end{DoxyParamCaption}) const}
+
+
+
+Function that draws this object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em window} & \mbox{\hyperlink{class_window}{Window}} on which we draw an object \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_score_a95357b1b751b2efa5a08bf7960c57484}\label{class_score_a95357b1b751b2efa5a08bf7960c57484}} 
+\index{Score@{Score}!set\_score@{set\_score}}
+\index{set\_score@{set\_score}!Score@{Score}}
+\doxysubsubsection{\texorpdfstring{set\_score()}{set\_score()}}
+{\footnotesize\ttfamily void Score\+::set\+\_\+score (\begin{DoxyParamCaption}\item[{int}]{score }\end{DoxyParamCaption})}
+
+
+
+Sets the score that this object displays. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em score} & \mbox{\hyperlink{class_score}{Score}} to display \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_score_a4e4679fb8a31de31c9604ab63bead3cf}\label{class_score_a4e4679fb8a31de31c9604ab63bead3cf}} 
+\index{Score@{Score}!setPosition@{setPosition}}
+\index{setPosition@{setPosition}!Score@{Score}}
+\doxysubsubsection{\texorpdfstring{setPosition()}{setPosition()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Score\+::set\+Position (\begin{DoxyParamCaption}\item[{float}]{pos\+\_\+x,  }\item[{float}]{pos\+\_\+y }\end{DoxyParamCaption})}
+
+
+
+Changes the position of this object displaying the score. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pos\+\_\+x} & Position on the x-\/axis on which you want to place the object \\
+\hline
+{\em pos\+\_\+y} & Position on the y-\/axis on which you want to place the object \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_score_abf23d27241f164727a98f21370f45a54}\label{class_score_abf23d27241f164727a98f21370f45a54}} 
+\index{Score@{Score}!setPosition@{setPosition}}
+\index{setPosition@{setPosition}!Score@{Score}}
+\doxysubsubsection{\texorpdfstring{setPosition()}{setPosition()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Score\+::set\+Position (\begin{DoxyParamCaption}\item[{sf\+::\+Vector2f}]{pos }\end{DoxyParamCaption})}
+
+
+
+Changes the position of this object displaying the score. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pos} & Vector containing the position on which we want to place an object \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Flappy Bird/\+Nodes/\+Specified Nodes/Score.\+h\end{DoxyCompactItemize}

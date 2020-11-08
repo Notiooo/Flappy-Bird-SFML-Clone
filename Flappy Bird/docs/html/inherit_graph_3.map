@@ -1,0 +1,9 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$class_general___state.html" title=" " alt="" coords="5,99,145,141"/>
+<area shape="rect" id="node2" href="$class_bird___state.html" title="State of bird behaviour." alt="" coords="193,107,276,133"/>
+<area shape="rect" id="node3" href="$class_flapping_state.html" title="The state of play when the player controls the bird." alt="" coords="324,5,427,32"/>
+<area shape="rect" id="node4" href="$class_flying_state.html" title="A state where bird is flying and waiting for user interaction." alt="" coords="331,56,419,83"/>
+<area shape="rect" id="node5" href="$class_ground_state.html" title="This is the condition in which the bird hit the ground." alt="" coords="328,107,423,133"/>
+<area shape="rect" id="node6" href="$class_hit_state.html" title="This is a condition that starts when a player hits a pipe with a bird." alt="" coords="341,157,410,184"/>
+<area shape="rect" id="node7" href="$class_score_state.html" title="In this state, the score that the player has achieved is displayed." alt="" coords="332,208,419,235"/>
+</map>

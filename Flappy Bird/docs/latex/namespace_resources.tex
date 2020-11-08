@@ -1,0 +1,66 @@
+\hypertarget{namespace_resources}{}\doxysection{Resources Namespace Reference}
+\label{namespace_resources}\index{Resources@{Resources}}
+
+
+Wide resource identifiers inside the game.  
+
+
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{namespace_resources_a740ff43862468bc68e6a24676bcceea8}{Textures}} \{ \newline
+{\bfseries Bird}, 
+{\bfseries Bird\+\_\+\+Spritesheet}, 
+{\bfseries Pipe\+\_\+\+Green}, 
+{\bfseries Background}, 
+\newline
+{\bfseries Ground}, 
+{\bfseries Instructions}, 
+{\bfseries Logo\+\_\+\+Label}, 
+{\bfseries Game\+\_\+\+Over\+\_\+\+Label}, 
+\newline
+{\bfseries Get\+\_\+\+Ready\+\_\+\+Label}, 
+{\bfseries Panel\+\_\+\+Score}, 
+{\bfseries Medal\+\_\+\+Bronze}, 
+{\bfseries Medal\+\_\+\+Gold}, 
+\newline
+{\bfseries Medal\+\_\+\+Platinum}, 
+{\bfseries Medal\+\_\+\+Silver}
+ \}
+\begin{DoxyCompactList}\small\item\em The identifiers of almost all textures in the game are stored here. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{namespace_resources_aa7a52b849042ba4535d611a93256e1e5}{Fonts}} \{ {\bfseries Flappy\+\_\+\+Font}
+ \}
+\begin{DoxyCompactList}\small\item\em The identifiers of almost all fonts in the game are stored here. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Wide resource identifiers inside the game. 
+
+Here you will find the identifiers of the various resources, which are managed by any (x)Manager. 
+
+\doxysubsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{namespace_resources_aa7a52b849042ba4535d611a93256e1e5}\label{namespace_resources_aa7a52b849042ba4535d611a93256e1e5}} 
+\index{Resources@{Resources}!Fonts@{Fonts}}
+\index{Fonts@{Fonts}!Resources@{Resources}}
+\doxysubsubsection{\texorpdfstring{Fonts}{Fonts}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{namespace_resources_aa7a52b849042ba4535d611a93256e1e5}{Resources\+::\+Fonts}}}
+
+
+
+The identifiers of almost all fonts in the game are stored here. 
+
+As the fonts are kept in the map \mbox{\hyperlink{namespace_resources_aa7a52b849042ba4535d611a93256e1e5}{Resources\+::\+Fonts}} to std\+::unique\+\_\+ptr$<$sf\+::\+Font$>$ we use the identifiers to easily pull out the font we need.
+
+The Font\+Manager that allows you to do this should be available in most of the code. \mbox{\Hypertarget{namespace_resources_a740ff43862468bc68e6a24676bcceea8}\label{namespace_resources_a740ff43862468bc68e6a24676bcceea8}} 
+\index{Resources@{Resources}!Textures@{Textures}}
+\index{Textures@{Textures}!Resources@{Resources}}
+\doxysubsubsection{\texorpdfstring{Textures}{Textures}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{namespace_resources_a740ff43862468bc68e6a24676bcceea8}{Resources\+::\+Textures}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+
+
+The identifiers of almost all textures in the game are stored here. 
+
+As the textures are kept in the map \mbox{\hyperlink{namespace_resources_a740ff43862468bc68e6a24676bcceea8}{Resources\+::\+Textures}} to std\+::unique\+\_\+ptr$<$sf\+::\+Texture$>$ we use the identifiers to easily pull out the textures we need.
+
+The Texture\+Manager that allows you to do this should be available in most of the code. 
