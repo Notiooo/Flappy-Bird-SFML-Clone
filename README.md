@@ -2,7 +2,7 @@
 
 The first ever game I've created in the SFML library for a class project from a 5-week (2 classes a week each) programming class for the 3rd semester of the Informatics at Silesian University of Technology.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/T7yNaf-oadA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+[![Example Gameplay](http://img.youtube.com/vi/T7yNaf-oadA/0.jpg)](http://www.youtube.com/watch?v=T7yNaf-oadA "Flappy Bird -- Example Gameplay")
 
 ## Source of knowledge
 The game is based on the framework "Simple and Fast Multimedia Library (SFML)". Knowledge about the library itself was collected mainly from SFML documentation, as well as from the book *SFML Game Development* published in June 2013 by the publisher Packt, and the authors: *Jan Haller, Henrik Vogelius Hansson, Artur Moreira*. Smaller or larger errors were fixed with use of questions and problems from sites such as StackOverflow and sometimes from the official SFML forum.
